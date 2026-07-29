@@ -1,0 +1,32 @@
+project: hostel-half-resignation
+mode: editorial-summary
+canvas: {width: 1080, height: 1890, count: 2}
+article:
+  title: 青旅开业后，我却进入了半离职状态
+  thesis: 人如何既自由地活，又扎根在真实世界里？
+  cta: 回复“接班”获取家族资源下的个人主权诊断 Beta
+panels:
+  - id: part-01
+    blocks:
+      - type: hero
+        content: 青旅开业后，我却进入了半离职状态
+      - type: metric-story
+        content: 170张床、员工、客人，以及停在家里的我
+      - type: pull-quote
+        content: 当我使用家庭资源时，我还能不能保留自己的人生？
+      - type: numbered-section
+        title: 我并不排斥家庭资源
+      - type: numbered-section
+        title: 更早发现问题的不是头脑，是身体
+      - type: numbered-section
+        title: 也许我使用了错误的时间单位
+  - id: part-02
+    blocks:
+      - type: numbered-section
+        title: AI 也在这个时候进入我的生活
+      - type: pull-quote
+        content: 网站不是生意。Prompt不是产品。样品不是品牌。
+      - type: three-column-experiments
+      - type: big-thesis
+      - type: offer-card
+      - type: sign-off

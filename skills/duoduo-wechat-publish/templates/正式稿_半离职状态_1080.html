@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>青旅开业后，我却进入了半离职状态 — 多多的未完成实验</title>
+<style>
+  /* ══════════════════════════════════════════════════════════
+     精确复刻参考图配色 · 海洋杂志/刊物风格
+     底色: 深青墨绿 #0c3236 (沉在海里的感觉)
+     卡片: 暖米白 #f5efe5 (羊皮纸/杂志纸)
+     编号: 亮青绿 #1fdcd8
+     ══════════════════════════════════════════════════════════ */
+  :root {
+    --bg-deep: #0c3236;
+    --card-bg: #f5efe5;
+    --card-bg-alt: #ede6d8;
+    --num-color: #1fdcd8;
+    --teal: #00b6c5;
+    --teal-light: #1fcedd;
+    --ink: #1a1a1a;
+    --ink-light: #444;
+    --ink-faint: #777;
+    --brown: #8a6a4a;
+    --gold: #c99a3f;
+    --serif-en: "Iowan Old Style", Baskerville, "Times New Roman", serif;
+    --serif-zh: "Songti SC", STSong, "Noto Serif CJK SC", serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* 全页无缝海浪背景：原生分辨率平铺(不拉伸=锐利)，覆盖全屏无绿色侧边 */
+  html {
+    background: url('assets/bg_深海海浪.png') repeat;
+    background-color: #0c3236;
+  }
+
+  body {
+    width: 1080px;
+    margin: 0 auto;
+    font-family: var(--serif-zh), var(--serif-en), serif;
+    color: var(--ink);
+    background: transparent;
+    line-height: 1.78;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* 仅极轻底部聚焦暗角，不覆盖/不涂抹海浪 */
+  body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 50% 105%, rgba(12,50,54,.22) 0%, transparent 45%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrap { position: relative; z-index: 1; }
+
+  /* ── Top bar ── */
+  .topbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 32px 48px 20px;
+    font-family: var(--serif-en);
+  }
+  .topbar .brand {
+    font-weight: 700; font-size: 63px;
+    color: var(--num-color); letter-spacing: .3em; text-transform: uppercase;
+  }
+  .topbar .sub {
+    font-style: italic; color: rgba(245,239,229,.45); font-size: 63px;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    display: grid; grid-template-columns: 1fr 360px; gap: 0;
+    padding: 16px 48px 40px; align-items: start;
+  }
+  .hero-text { padding-right: 36px; }
+  .hero h1 {
+    font-size: 108px; line-height: 1.28; font-weight: 700;
+    color: var(--card-bg);
+    margin-bottom: 18px;
+  }
+  .hero h1 em {
+    display: block; font-style: normal; font-weight: 400;
+    font-size: 63px; color: var(--num-color);
+    letter-spacing: .08em; margin-top: 12px;
+    font-family: var(--serif-en);
+  }
+  .hero p {
+    font-size: 63px; color: rgba(245,239,229,.7); max-width: 520px;
+    line-height: 1.7;
+  }
+
+  .hero-img { position: relative; }
+  .hero-img img {
+    width: 82%; border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.4);
+    display: block; margin: 0 auto;
+  }
+  .hero-badge {
+    position: absolute; top: -14px; right: -10px;
+    background: var(--card-bg); border: 2px solid var(--num-color);
+    border-radius: 50%; width: 224px; height: 224px;
+    display: grid; place-items: center;
+    font-family: var(--serif-en); font-size: 62px; font-weight: 800;
+    color: var(--bg-deep); text-align: center; line-height: 1.15;
+    box-shadow: 0 4px 16px rgba(31,220,216,.25);
+  }
+
+  /* ── Section card (米白卡片漂浮在深海上) ── */
+  .sec { padding: 8px 48px 28px; }
+  .sec-inner {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 38px 42px;
+    box-shadow: 0 8px 32px rgba(0,0,0,.25);
+    position: relative;
+  }
+  .sec-header { display: flex; align-items: flex-start; gap: 20px; margin-bottom: 24px; }
+  .sec-num {
+    flex: 0 0 140px; height: 140px; border-radius: 50%;
+    background: var(--num-color); color: var(--bg-deep);
+    display: grid; place-items: center;
+    font-family: var(--serif-en); font-size: 63px; font-weight: 800;
+    box-shadow: 0 4px 16px rgba(31,220,216,.35);
+  }
+  .sec-title { flex: 1; }
+  .sec-title h2 {
+    font-size: 78px; font-weight: 700; color: var(--ink); line-height: 1.35;
+  }
+  .sec-title h2 em {
+    display: block; font-style: normal; font-weight: 400;
+    font-size: 63px; color: var(--teal); margin-top: 6px;
+    font-family: var(--serif-en); letter-spacing: .06em;
+  }
+
+  .sec-body { font-size: 63px; line-height: 1.85; color: var(--ink); }
+  .sec-body p { margin-bottom: 16px; }
+  .sec-body ul {
+    padding-left: 0; margin: 16px 0;
+    list-style: none;
+  }
+  .sec-body li {
+    position: relative; padding-left: 20px; margin-bottom: 8px;
+  }
+  .sec-body li::before {
+    content: '•';
+    position: absolute; left: 0;
+    color: var(--teal); font-weight: bold;
+  }
+
+  /* ── 引用块（非默认样式）── 大引号风格 ── */
+  blockquote {
+    margin: 24px 0; padding: 24px 28px;
+    background: linear-gradient(135deg, rgba(31,220,216,.08), rgba(31,220,216,.03));
+    border-left: none; border-radius: 6px;
+    font-size: 63px; line-height: 1.7;
+    color: var(--ink); font-style: italic;
+    position: relative;
+  }
+  blockquote::before {
+    content: '"';
+    position: absolute; top: 8px; left: 14px;
+    font-family: var(--serif-en); font-size: 144px;
+    color: var(--num-color); opacity: .25;
+    line-height: 1;
+  }
+  blockquote strong {
+    color: var(--bg-deep); font-style: normal; font-weight: 700;
+  }
+
+  /* ── Photo in section ── */
+  .sec-photo { margin: 24px 0; }
+  .sec-photo img {
+    width: 75%; border-radius: 8px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.15);
+    display: block; margin: 0 auto;
+  }
+  .sec-photo .caption {
+    text-align: right; margin-top: 10px;
+    font-size: 63px; color: var(--brown); font-style: italic;
+    font-family: var(--serif-en);
+  }
+
+  /* ── Full-width wave photo/video (破卡片边界) ── */
+  .wave-banner { margin: 20px -42px; }
+  .wave-banner img,
+  .wave-banner video.wave-video {
+    width: calc(100% + 84px); max-width: 900px;
+    border-radius: 0;
+    display: block; margin: 0 auto;
+    box-shadow: 0 6px 24px rgba(0,0,0,.2);
+  }
+
+  /* ── Three-column experiment cards ── */
+  .tri-grid {
+    display: grid; grid-template-columns: 1fr; gap: 18px;
+    margin: 24px 0 10px;
+  }
+  .tri-card {
+    background: var(--card-bg-alt); border-radius: 8px;
+    padding: 24px 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.1);
+    border-top: 3px solid var(--num-color);
+  }
+  .tri-card h3 {
+    font-size: 63px; color: var(--teal);
+    margin-bottom: 10px; font-family: var(--serif-en);
+    font-weight: 700;
+  }
+  .tri-card p { font-size: 63px; color: var(--ink-light); line-height: 1.65; margin-bottom: 8px; }
+  .tri-card img { width: 88%; border-radius: 6px; margin-top: 12px; display: block; margin-left: auto; margin-right: auto; }
+
+  /* ── CTA box (深色面板) ── */
+  .cta-box {
+    background: linear-gradient(145deg, #0a2b2e, #0e383d);
+    color: var(--card-bg);
+    border-radius: 10px; padding: 40px 44px;
+    margin: 12px 48px 32px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.4);
+    position: relative; overflow: hidden;
+  }
+  .cta-box::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, transparent, var(--num-color), transparent);
+  }
+  .cta-box h2 { font-size: 78px; margin-bottom: 16px; line-height: 1.4; }
+  .cta-box h2 b { color: var(--num-color); font-weight: 700; }
+  .cta-box p { font-size: 63px; opacity: .88; margin-bottom: 12px; line-height: 1.72; }
+  .cta-box ul { padding-left: 0; margin: 14px 0 20px; font-size: 63px; line-height: 1.75; list-style: none; }
+  .cta-box li {
+    position: relative; padding-left: 20px; margin-bottom: 7px;
+  }
+  .cta-box li::before {
+    content: '›';
+    position: absolute; left: 0;
+    color: var(--num-color); font-weight: bold; font-size: 63px;
+  }
+  .cta-tag {
+    display: inline-block; margin-top: 20px; padding: 14px 26px;
+    border: 2px solid var(--num-color); color: var(--num-color);
+    font-family: var(--serif-en); font-size: 63px; font-weight: 800;
+    letter-spacing: .06em; border-radius: 4px;
+    background: rgba(31,220,216,.08);
+  }
+
+  /* ── Footer ── */
+  .foot {
+    text-align: center; padding: 40px 48px 56px;
+    font-family: var(--serif-en);
+  }
+  .foot .sign { font-size: 66px; color: var(--card-bg); font-weight: 600; margin-bottom: 10px; }
+  .foot .tagline { font-size: 63px; color: var(--num-color); font-style: italic; margin-bottom: 26px; opacity: .8; }
+  .foot .next { font-size: 63px; color: rgba(245,239,229,.55); margin-top: 22px; line-height: 1.6; }
+  .foot .next em { color: var(--num-color); font-style: italic; }
+  .foot .qr {
+    width: 260px; height: 331px; background: var(--card-bg);
+    border: 2px solid rgba(245,239,229,.15); border-radius: 12px;
+    margin: 20px auto; display: grid; place-items: center;
+    color: var(--brown); font-size: 63px; overflow: hidden;
+  }
+  .foot .qr img { width: 100%; height: 100%; display: block; object-fit: contain; }
+
+  /* ── Decorations (shell/compass SVG) ── */
+  .deco-shell {
+    position: absolute; color: var(--num-color); opacity: .22;
+    pointer-events: none;
+  }
+  .deco-compass {
+    position: absolute; color: var(--num-color); opacity: .18;
+    pointer-events: none;
+  }
+
+  @media print {
+    body { background-color: var(--bg-deep); }
+    body::before { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ═══ Topbar ═══ -->
+<div class="topbar">
+  <div class="brand">DUODUO OS</div>
+  <div class="sub">The Unfinished Experiment</div>
+</div>
+
+<!-- ═══ Hero ═══ -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>青旅开业后，<br>我却进入了半离职状态<em>THE UNFINISHED EXPERIMENT</em></h1>
+    <p>我没有离开家里的项目，也没有真正留下。<br>我开始用身体节律和 AI，重建自己的生活与事业。</p>
+  </div>
+  <div class="hero-img">
+    <img src="assets/懒懒岛_玻璃穹顶.jpg" alt="懒懒岛空间">
+    <div class="hero-badge">懒懒岛<br>已<br>开业</div>
+  </div>
+</div>
+
+<!-- ═══ 01 不是离开家里 ═══ -->
+<div class="sec">
+  <div class="sec-inner">
+    <!-- 贝壳装饰 -->
+    <svg class="deco-shell" style="right:22px;top:-10px;width:56px" viewBox="0 0 100 86"><path d="M50 0C22.4 0 0 19.3 0 43s22.4 43 50 43 50-19.3 50-43S77.6 0 50 0zm0 78c-23.2 0-42-15.7-42-35S26.8 8 50 8s42 15.7 42 35-18.8 35-42 35z" fill="currentColor"/><path d="M50 16c-16.5 0-30 12.1-30 27 0 9 5.2 16.9 13.3 21.8L50 76l16.7-11.2C74.8 59.9 80 52 80 43c0-14.9-13.5-27-30-27zm0 48c-13.2 0-24-9.4-24-21S36.8 22 50 22s24 9.4 24 21-10.8 21-24 21z" fill="currentColor" opacity=".5"/></svg>
+
+    <div class="sec-header">
+      <div class="sec-num">01</div>
+      <div class="sec-title">
+        <h2>不是离开家里，而是保留自己的人生<em>Not Leaving · Protecting Self</em></h2>
+      </div>
+    </div>
+    <div class="sec-body">
+      <p>我从来不认为，一个人必须抛弃家庭提供的一切，从零开始，才能证明自己的能力。</p>
+      <p>上一代已经积累下来的项目、资金、人脉、经验和信任，本来就可以成为下一代的杠杆。</p>
+      <blockquote><strong>当我使用家庭资源时，我还能不能保留自己的人生。</strong></blockquote>
+      <p>在青旅项目里，我曾经承担接近创业者的结果责任。可承担创业者的责任，并不代表自动拥有创业者的权力。</p>
+      <p>更复杂的是，和我发生意见冲突的人，不只是我的老板。<strong>也是我的父亲。</strong></p>
+      <p>我不是不能承担责任。我不能继续在缺乏真实决定权的情况下，承担无限责任。</p>
+    </div>
+    <div class="sec-photo">
+      <img src="assets/懒懒岛_天台睡眠大会.jpg" alt="懒懒岛天台睡眠大会">
+      <div class="caption">天台睡眠大会 —— 懒懒岛的居住实验</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 02 身体先知道 ═══ -->
+<div class="sec">
+  <div class="sec-inner">
+    <svg class="deco-compass" style="right:24px;top:-8px;width:48px" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="50" cy="50" r="3" fill="currentColor"/><path d="M50 5v90M5 50h95" stroke="currentColor" stroke-width="1" opacity=".4"/><path d="M50 5l8 45-8 8-8-8z" fill="currentColor"/></svg>
+
+    <div class="sec-header">
+      <div class="sec-num">02</div>
+      <div class="sec-title">
+        <h2>更早发现问题的，不是我的头脑。是身体。<em>Body Knew First</em></h2>
+      </div>
+    </div>
+    <div class="sec-body">
+      <p>人在失去生命力的时候，不一定会突然倒下。更常见的过程，是生活一点点缩小。</p>
+      <ul>
+        <li>不再想运动</li>
+        <li>不再想发消息</li>
+        <li>不再记录生活</li>
+        <li>以前会让我兴奋的旅行、创造、衣服、采访和新项目，开始变得很远</li>
+      </ul>
+      <p>后来我开始变得烦躁，抽更多烟，吃饭变得混乱，胸口发紧。</p>
+      <p>但这一次，我没有马上走。我留在家里。前面一段时间，我只是<strong>睡觉、吃饭、看电视、陪我的狗</strong>。</p>
+      <blockquote>真正让我恢复的，不只是换一个国家。而是停止持续暴露在伤害性的结构里；重新拥有自己的时间；让身体得到休息；重新接触人、自然和新鲜感；用手创造真实的东西。</blockquote>
+    </div>
+    <div class="sec-photo">
+      <img src="assets/工作台_一体.jpg" alt="工作台与狗（真实狗）">
+      <div class="caption">在家工作台 —— 半离职后的日常</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 03 Follow Earth ═══ -->
+<div class="sec">
+  <div class="sec-inner">
+    <div class="sec-header">
+      <div class="sec-num">03</div>
+      <div class="sec-title">
+        <h2>Follow Earth. Not Calendar.<em>Rhythm Over Schedule</em></h2>
+      </div>
+    </div>
+    <div class="sec-body">
+      <p>过去，我也尝试过很多传统的时间管理方法。每天运动一小时、每天写作一小时、每天推进副业。但对我来说，这种方法常常带来另一个结果：<strong>每天都重新经历一次「没有完成计划」的失败。</strong></p>
+      <p>身体从来不是每天平均运行的。项目也不是。一个真实项目需要经历不同阶段：先确定方向 → 再连续建设 → 然后发布、销售、接收反馈 → 最后收尾、复盘和恢复。</p>
+    </div>
+
+    <!-- 全宽冲浪动图（转成 GIF，切图上传也能动） -->
+    <div class="wave-banner">
+      <img src="assets/冲浪.gif" alt="冲浪" class="wave-video">
+    </div>
+
+    <div class="sec-body">
+      <blockquote><strong>身体节律不是一个提高效率的小技巧。它是我在旧系统里耗尽之后，为了让生活重新运转，被迫建立出来的新秩序。</strong></blockquote>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 04 AI 是放大镜 ═══ -->
+<div class="sec">
+  <div class="sec-inner">
+    <svg class="deco-shell" style="left:20px;top:-8px;width:50px" viewBox="0 0 100 86"><path d="M50 0C22.4 0 0 19.3 0 43s22.4 43 50 43 50-19.3 50-43S77.6 0 50 0zm0 78c-23.2 0-42-15.7-42-35S26.8 8 50 8s42 15.7 42 35-18.8 35-42 35z" fill="currentColor"/><path d="M50 16c-16.5 0-30 12.1-30 27 0 9 5.2 16.9 13.3 21.8L50 76l16.7-11.2C74.8 59.9 80 52 80 43c0-14.9-13.5-27-30-27zm0 48c-13.2 0-24-9.4-24-21S36.8 22 50 22s24 9.4 24 21-10.8 21-24 21z" fill="currentColor" opacity=".5"/></svg>
+
+    <div class="sec-header">
+      <div class="sec-num">04</div>
+      <div class="sec-title">
+        <h2>AI 是放大镜，不是捷径<em>AI Amplifies · Doesn't Shortcut</em></h2>
+      </div>
+    </div>
+    <div class="sec-body">
+      <p>当青旅的谈判暂时没有结果时，我不想让整个人生也停在那里。我开始让 AI 帮助我整理过去的日记、旅行、项目和课程。</p>
+      <p>但 AI 也让我看见了另一种更隐蔽的拖延：<strong>它可以让我很快得到一个完整的网站、漂亮的产品框架和看起来成熟的方法论。然后让我误以为——我已经做了这么多，应该已经算开始了。</strong></p>
+      <blockquote>网站不是生意。Prompt 不是产品。样品不是品牌。方法论也不是客户结果。只有当一个真实的人愿意付款，我完成交付，并且对方得到了可以被描述的变化，一项事业才真正开始。</blockquote>
+    </div>
+    <div class="sec-photo">
+      <img src="assets/办公.png" alt="办公">
+      <div class="caption">把过去的日记、项目、课程，重新整理成可以用的东西</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 05 三个实验（三栏） ═══ -->
+<div class="sec">
+  <div class="sec-inner">
+    <div class="sec-header">
+      <div class="sec-num">05</div>
+      <div class="sec-title">
+        <h2>这是《多多的未完成实验》<em>Three Experiments In Progress</em></h2>
+      </div>
+    </div>
+
+    <div class="tri-grid">
+      <div class="tri-card">
+        <h3>Experiment Ⅰ</h3>
+        <p><strong>如何使用家庭资源，但不把自己交出去</strong></p>
+        <p>接班前真正应该确认什么？责任和决策权为什么必须对应？怎样参与家族企业，同时保留个人道路？</p>
+        <img src="assets/懒懒岛_外立面.jpg" alt="懒懒岛外立面">
+      </div>
+      <div class="tri-card">
+        <h3>Experiment Ⅱ</h3>
+        <p><strong>从 20 件不舒服的泳衣开始做品牌</strong></p>
+        <p>承认产品现在还不值得别人付款，然后重新学习身体、版型、供应链和真实购买。</p>
+        <img src="assets/Flat_lay_photography_of_15_20__2026-07-25T21-44-13.png" alt="泳衣样品">
+      </div>
+      <div class="tri-card">
+        <h3>Experiment Ⅲ</h3>
+        <p><strong>用身体节律经营个人公司</strong></p>
+        <p>让每一轮真正经历：开始、建设、显现、反馈、收尾。记录它究竟能不能让我更自由。</p>
+        <img src="assets/瑜伽_海边.jpg" alt="海边瑜伽">
+      </div>
+    </div>
+
+    <div class="sec-body">
+      <blockquote><strong>这个账号长期想讨论的问题是：人如何既自由地活，又扎根在真实世界里？</strong></blockquote>
+      <p>自由不是永远逃离责任。扎根也不是把自己交给一条安全、现成，却不一定属于自己的道路。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 06 自由又扎根 ═══ -->
+<div class="sec">
+  <div class="sec-inner">
+    <svg class="deco-compass" style="left:24px;top:-8px;width:44px" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="50" cy="50" r="3" fill="currentColor"/><path d="M50 5v90M5 50h95" stroke="currentColor" stroke-width="1" opacity=".4"/><path d="M50 5l8 45-8 8-8-8z" fill="currentColor"/></svg>
+
+    <div class="sec-header">
+      <div class="sec-num">06</div>
+      <div class="sec-title">
+        <h2>人如何既自由地落地，又扎在真实世界里？<em>Free & Rooted</em></h2>
+      </div>
+    </div>
+    <div class="sec-body">
+      <ul>
+        <li>怎样使用已经拥有的资源</li>
+        <li>怎样建立自己的能力和收入</li>
+        <li>怎样让身体不再成为事业的牺牲品</li>
+        <li>怎样爱家人，同时保留边界</li>
+        <li>怎样在城市与海之间生活</li>
+        <li>怎样让旅行、创造和工作不再互相敌对</li>
+        <li>怎样把一个人曾经解决过的问题，逐渐变成可以帮助别人的产品</li>
+      </ul>
+      <p>我不会假装自己已经成功。这个公众号记录的，本来就是：</p>
+      <blockquote><strong>一个尚未完成的人，怎样把生活重新做一遍。</strong></blockquote>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 07 CTA ═══ -->
+<div class="cta-box">
+  <h2>第一项收费实验<b>家族资源下的个人主权诊断 Beta</b></h2>
+  <p>它适合那些：</p>
+  <ul>
+    <li>家里有一条现成道路，却不知道自己要不要走</li>
+    <li>正在被父母邀请或催促回家</li>
+    <li>想使用家庭资源，又担心失去自己的发展空间</li>
+    <li>还不知道个人事业在哪里，害怕一回去就再也没有机会探索</li>
+    <li>不想为了证明独立抛弃一切，也不想顺理成章地交出人生</li>
+  </ul>
+  <div class="cta-tag">后台回复「接班」获取优先说明 →</div>
+</div>
+
+<!-- ═══ Footer ═══ -->
+<div class="foot">
+  <div class="sign">我叫多多。这是我的未完成实验。</div>
+  <div class="tagline">也是我第一次不等答案全部出现，就开始公开记录。</div>
+  <div class="next">下一篇：<em>《接班前最该问的，不是我负责什么，而是我能决定什么。》</em></div>
+  <div class="qr"><img src="assets/微信号二维码.png" alt="扫码关注 多多OS 公众号"></div>
+</div>
+
+</div><!-- /.wrap -->
+</body>
+</html>

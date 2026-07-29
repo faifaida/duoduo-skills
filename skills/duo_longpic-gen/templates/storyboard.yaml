@@ -1,0 +1,39 @@
+project: ""
+mode: editorial-summary
+canvas:
+  width: 1080
+  height: 1890
+  count: 2
+language: zh-CN
+brand:
+  title: DUODUO
+  subtitle: 多多的未完成实验
+article:
+  title: ""
+  subtitle: ""
+  thesis: ""
+  cta: ""
+must_keep_quotes: []
+must_keep_facts: []
+assets: []
+panels:
+  - id: part-01
+    label: "VOL. 01 / Part 1"
+    purpose: "发生了什么，以及为什么停下来"
+    blocks:
+      - type: hero
+        source_text: ""
+        edited_text: ""
+        image: ""
+        word_budget_cn: 80
+      - type: story-card
+        source_text: ""
+        edited_text: ""
+        word_budget_cn: 180
+      - type: pull-quote
+        edited_text: ""
+        word_budget_cn: 35
+  - id: part-02
+    label: "VOL. 02 / Part 2"
+    purpose: "新秩序、方法与行动"
+    blocks: []

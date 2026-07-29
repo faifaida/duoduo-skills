@@ -1,0 +1,197 @@
+{
+  "generated_at": "2026-07-26T06:23:35",
+  "repo": "faifaida/duoduo-skills",
+  "branch": "main",
+  "visibility": "public (PENDING: make private)",
+  "skills": [
+    {
+      "dir": "duoduo-approval-detect-and-release",
+      "purpose": "检测 Obsidian 里多多的 == == 高亮批复，驱动下游释放：把已批复的待审文件移入 archive/（任务类），更新已审放行清单供员工自取。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 2145,
+          "sha256_16": "a2dcb25eae6d5469"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-caldav-calendar-write",
+      "purpose": "macOS 沙箱下经 CalDAV 可靠读写 iCloud 日历（osascript/EventKit 在此环境走不通），支持事件 CREATE/UPDATE/DELETE。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 5113,
+          "sha256_16": "802f24adbfb36784"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-company-daily-os",
+      "purpose": "个人公司每日 13:00 总办简报：汇总三名员工(内容运营/资料员/产品经理)前一日产出，生成简报+验收+次日任务+待审标记+下发。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 3659,
+          "sha256_16": "f37b0955877279bd"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-company-night-patrol",
+      "purpose": "个人公司 23:00 夜巡：重扫当日任务留尾，跑每日 archive 归档 + 待审 emoji 标记(❗️>1天 / ‼️>2天)。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 2798,
+          "sha256_16": "e1c327551b9c9673"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-design-system",
+      "purpose": "多多个人品牌设计系统（蓝绿+米、全衬线、纹身/灵性/部落母题），任何前端/社媒/产品页设计自动触发。",
+      "files": [
+        {
+          "path": "brand-dna.md",
+          "bytes": 11337,
+          "sha256_16": "0e8a02f17785cc03"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 4528,
+          "sha256_16": "34c93d0aabe26c2a"
+        },
+        {
+          "path": "references/components.md",
+          "bytes": 7190,
+          "sha256_16": "270b331e7c62982c"
+        },
+        {
+          "path": "references/layouts.md",
+          "bytes": 5691,
+          "sha256_16": "4577d3e1fdaad5b3"
+        },
+        {
+          "path": "references/checklist.md",
+          "bytes": 1551,
+          "sha256_16": "47bbe8065c55807c"
+        },
+        {
+          "path": "assets/template-brand.html",
+          "bytes": 2678,
+          "sha256_16": "94cbe7fa193cc88e"
+        },
+        {
+          "path": "assets/template-landing.html",
+          "bytes": 14315,
+          "sha256_16": "2b5330814d0b01cd"
+        },
+        {
+          "path": "assets/motifs.svg",
+          "bytes": 3973,
+          "sha256_16": "06683b1c4d2f745c"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-diary-to-calendar-pipeline",
+      "purpose": "每日 13:00 拉取 IMA 日记→导出 Obsidian→抽取 todo→经 CalDAV 写入 iCloud 日历。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 2962,
+          "sha256_16": "36b38bd0dbc18e4d"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-expert-hourly-patrol",
+      "purpose": "三名员工(内容运营/资料员/产品经理)每小时 10:00–23:00 自取机制：轮询自身文件夹指令+已审放行清单，自取执行并标记 done 防重复。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 3053,
+          "sha256_16": "2885dd022f064050"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-github-sync",
+      "purpose": "把 duoduo-* 技能库 + 总览备份到 GitHub 仓库 faifaida/duoduo-skills（按需）。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 3339,
+          "sha256_16": "da1617db5672b250"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-netease-transcript",
+      "purpose": "曲曲(网易)录音转录按需同步：拉取最新转录稿到 Obsidian/02_内容运营。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 1749,
+          "sha256_16": "e3727ea06799502a"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-voice-deai",
+      "purpose": "多多内容「去 AI 味 + 原声重写」SOP：小红书/即刻/知识星球/朋友圈/X/Threads 等公开发文改写。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 15455,
+          "sha256_16": "570ca92bf14dc98b"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-wechat-chat-export",
+      "purpose": "把指定微信会话从本机 macOS 微信沙盒导出为 Obsidian 带日期、可搜索的 Markdown。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 2172,
+          "sha256_16": "e32a71fc803a6c43"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-weekly-review-calendar",
+      "purpose": "每周一 13:00 周复盘：总结上周一至周日日记→以多多周报格式产出→问 6 个固定问题对齐下周→写入系统日历(用已有标签颜色)。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 11308,
+          "sha256_16": "08cf693ba09b57df"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-weread-digest",
+      "purpose": "资料员每周二 09:00 微信读书划线摘要：拉取多多划线→Obsidian/03_资料员。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 2077,
+          "sha256_16": "04773e680177dc7e"
+        }
+      ]
+    },
+    {
+      "dir": "duoduo-xhs-weekly-digest",
+      "purpose": "内容运营每周二 07:00 小红书收藏专辑新增摘要：抓指定专辑上周新增→Obsidian/02_内容运营。",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 2143,
+          "sha256_16": "c327f1c9a60e8d56"
+        }
+      ]
+    }
+  ]
+}

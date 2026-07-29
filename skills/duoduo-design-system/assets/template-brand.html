@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>多多 · 个人品牌主页（模板起点）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F1E9DA; --surface:#FAF4E8; --surface-2:#E7D9C2;
+    --ink:#1F2E29; --ink-soft:#45524B;
+    --teal:#157A6E; --teal-deep:#0E5A50; --teal-light:#4FB0A1;
+    --clay:#B5713F; --ochre:#C99A3F; --sand:#D8C3A5;
+    --display:'Noto Serif SC',serif; --accent:'Fraunces',serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--display); line-height:1.8;
+    background-image:radial-gradient(circle at 12% 8%, rgba(79,176,161,.16), transparent 42%),
+                     radial-gradient(circle at 88% 82%, rgba(181,113,63,.12), transparent 46%);}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 22px;}
+  /* 从组件库选组件替换下方占位 section，禁止用 HTML 默认样式 */
+  section{padding:88px 0;}
+  h1,h2,h3{font-family:var(--display); font-weight:600; line-height:1.25;}
+  /* 模板仅提供骨架，具体视觉按 brand-dna.md 用组件库填充 */
+</style>
+</head>
+<body>
+  <!-- 导航 -->
+  <header class="wrap" style="display:flex;justify-content:space-between;align-items:center;padding:24px 22px;">
+    <strong style="font-size:20px;color:var(--teal-deep);">多多</strong>
+    <nav style="display:flex;gap:22px;font-size:15px;color:var(--ink-soft);">
+      <span>关于</span><span>作品</span><span>知识库</span><span>合作</span>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="wrap">
+    <h1 style="font-size:clamp(40px,7vw,64px);color:var(--teal-deep);margin:0 0 16px;">多多</h1>
+    <p style="font-size:clamp(17px,2.4vw,22px);max-width:640px;color:var(--ink);">美丽不是装饰，是对抗麻木和庸常的方式。</p>
+  </section>
+
+  <!-- 在此按 layouts.md 选 3-5 种布局，每个 section 不同；按 components.md 填组件 -->
+  <section class="wrap"><h2>关于 / 理念</h2></section>
+  <section class="wrap"><h2>作品 / 产品聚合</h2></section>
+  <section class="wrap"><h2>内容 / 知识库入口</h2></section>
+  <section class="wrap"><h2>合作 / 接洽</h2></section>
+
+  <footer class="wrap" style="padding:40px 22px;color:var(--ink-soft);font-size:13px;">© 多多 · 个人品牌</footer>
+</body>
+</html>

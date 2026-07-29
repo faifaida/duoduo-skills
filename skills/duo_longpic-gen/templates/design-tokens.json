@@ -1,0 +1,26 @@
+{
+  "canvas": {"width": 1080, "height": 1890, "ratio": "4:7"},
+  "colors": {
+    "oceanDeep": "#123E53",
+    "oceanMid": "#166D79",
+    "oceanLight": "#20AEB9",
+    "highlightCyan": "#00B4C5",
+    "paperBeige": "#F1E9DA",
+    "paperWarm": "#E9DDC9",
+    "logoBlue": "#2E27A8",
+    "graphite": "#25262B",
+    "brown": "#8A6A4A",
+    "darkRed": "#6F0A14",
+    "antiqueGold": "#C99A3F"
+  },
+  "typeScale1080": {
+    "hero": [72, 104],
+    "h2": [44, 60],
+    "h3": [32, 42],
+    "body": [28, 34],
+    "caption": [22, 26],
+    "decorativeMinimum": 18
+  },
+  "spacing": {"safeX": 54, "safeY": 48, "baseline": 8},
+  "texture": {"fiberOpacity": 0.08, "weaveOpacity": 0.025, "shadowOpacity": 0.12}
+}

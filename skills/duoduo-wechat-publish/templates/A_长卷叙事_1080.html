@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>多多的未完成实验 · 公众号首篇（长卷叙事 vA）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Noto+Serif+SC:wght@400;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#00B6C5; --teal-deep:#008D9A; --teal-light:#1FCEDD;
+    --sand:#C89B6A; --clay:#B5543A; --ochre:#C9902E;
+    --cream:#F1E9DA; --cream-deep:#E8DCC8; --paper:#FAF6EE;
+    --ink:#2A2620; --ink-light:#564E42; --ink-faint:#8A7F6E;
+    --serif-cn:'Noto Serif SC','Songti SC',serif;
+    --display:'Fraunces','Noto Serif SC',serif;
+    --hand:'Caveat',cursive;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:#d9cdb6;
+    font-family:var(--serif-cn);
+    color:var(--ink);
+    display:flex;justify-content:center;
+    padding:40px 0;
+  }
+  .page{
+    width:1080px;background:var(--cream);
+    background-image:radial-gradient(120% 60% at 50% -10%, rgba(31,206,221,.10), transparent 60%),
+                     radial-gradient(100% 50% at 100% 100%, rgba(201,154,46,.08), transparent 55%);
+    box-shadow:0 20px 80px rgba(26,26,20,.18);
+    overflow:hidden;
+  }
+  /* hero */
+  .hero{padding:72px 80px 54px;text-align:center;position:relative;}
+  .kicker{font-family:var(--hand);font-size:26px;color:var(--ochre);letter-spacing:1px;}
+  .pub{font-family:var(--display);font-size:17px;letter-spacing:6px;color:var(--teal-deep);text-transform:uppercase;margin-top:6px;}
+  h1{font-family:var(--display);font-weight:600;font-size:60px;line-height:1.18;color:var(--ink);margin:22px 0 18px;}
+  h1 .cn{font-family:var(--serif-cn);}
+  .sub{font-family:var(--serif-cn);font-style:italic;font-size:22px;color:var(--ink-light);line-height:1.7;max-width:760px;margin:0 auto;}
+  .meta{margin-top:26px;font-size:17px;color:var(--ink-faint);letter-spacing:1px;}
+  .meta b{color:var(--clay);font-weight:600;}
+
+  /* photo placeholder */
+  .photo{margin:8px 80px 0;height:460px;background:var(--cream-deep);
+    border:2px dashed var(--sand);border-radius:14px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    color:var(--ink-faint);font-size:18px;text-align:center;gap:10px;}
+  .photo .tag{font-family:var(--hand);font-size:24px;color:var(--teal-deep);}
+  .photo.small{height:340px;}
+
+  /* divider band 40px */
+  .band{height:40px;margin:56px 0;background:linear-gradient(90deg,var(--teal),var(--teal-light));position:relative;}
+  .band.ochre{background:linear-gradient(90deg,var(--ochre),var(--sand));}
+  .band svg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
+
+  /* section */
+  .sec{padding:0 80px;}
+  .ch-no{font-family:var(--display);font-size:20px;color:var(--teal-deep);letter-spacing:3px;}
+  h2{font-family:var(--serif-cn);font-weight:700;font-size:34px;line-height:1.4;color:var(--ink);margin:6px 0 22px;}
+  p{font-size:18px;line-height:1.95;color:var(--ink);margin-bottom:18px;}
+  p.lead{font-size:20px;color:var(--ink-light);}
+  /* quote card */
+  .quote{background:var(--paper);border-radius:18px;padding:34px 40px;margin:26px 0;position:relative;
+    box-shadow:0 8px 40px rgba(26,26,20,.05);}
+  .quote::before{content:"“";font-family:var(--display);font-size:80px;color:var(--ochre);opacity:.35;position:absolute;top:6px;left:22px;line-height:1;}
+  .quote p{font-size:19px;line-height:1.9;color:var(--ink-light);margin:0;padding-left:30px;}
+  ul.list{margin:18px 0 18px;padding-left:0;list-style:none;}
+  ul.list li{font-size:18px;line-height:1.9;color:var(--ink);padding:10px 0 10px 34px;position:relative;}
+  ul.list li::before{content:"";position:absolute;left:6px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--teal);}
+  ul.list li b{color:var(--clay);}
+
+  /* CTA card */
+  .cta{margin:40px 80px;background:var(--ink);border-radius:20px;padding:44px 48px;color:var(--cream);position:relative;overflow:hidden;}
+  .cta h3{font-family:var(--serif-cn);font-size:28px;color:var(--teal-light);margin-bottom:14px;}
+  .cta p{color:var(--cream);font-size:18px;line-height:1.9;}
+  .cta .pill{display:inline-block;margin-top:18px;background:var(--clay);color:#fff;font-size:20px;font-weight:600;
+    padding:12px 28px;border-radius:50px;letter-spacing:2px;}
+  /* footer */
+  .foot{padding:54px 80px 64px;text-align:center;background:var(--cream-deep);margin-top:30px;}
+  .foot .qr{width:150px;height:150px;background:var(--paper);border:2px solid var(--sand);border-radius:12px;margin:0 auto 18px;
+    display:flex;align-items:center;justify-content:center;color:var(--ink-faint);font-size:17px;}
+  .foot p{font-size:17px;color:var(--ink-light);}
+  .foot .sig{font-family:var(--hand);font-size:30px;color:var(--ochre);margin-top:10px;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hero">
+    <div class="kicker">the unfinished experiment</div>
+    <div class="pub">多多的未完成实验</div>
+    <h1>青旅开业后，<br><span class="cn">我却进入了半离职状态</span></h1>
+    <div class="sub">我没有离开家里的项目，也没有真正留下。<br>我开始用身体节律和 AI，重建自己的生活与事业。</div>
+    <div class="meta">2026.07.25 &nbsp;·&nbsp; 文 / <b>多多</b> &nbsp;·&nbsp; 公众号首篇</div>
+  </div>
+
+  <div class="photo"><span class="tag">📷 照片位 01</span>懒懒岛已开业的空间 / 你在现场的工作照<br><span style="font-size:17px">（替换为你实拍，禁用 AI 图）</span></div>
+
+  <div class="band">
+    <svg width="60" height="40" viewBox="0 0 60 40"><path d="M2 30 Q15 10 30 30 T58 30" fill="none" stroke="#fff" stroke-width="3"/></svg>
+  </div>
+
+  <div class="sec">
+    <div class="ch-no">01 / THE PAUSE</div>
+    <h2>从一个具体场景开始</h2>
+    <p class="lead">懒懒岛已经开业了。这本来应该是我最有成就感的时候。</p>
+    <p>它从一个模糊的想法，变成了真实存在的空间——170 张床，有员工，有客人，也有我们投入进去的大量时间和钱。</p>
+    <p>但开业之后，我却停在了家里。</p>
+    <p>我没有正式离开，也没有真正继续工作。关于独立经营权、责任、分成和边界的谈判卡在那里，我也一起卡在那里。</p>
+  </div>
+
+  <div class="band ochre">
+    <svg width="60" height="40" viewBox="0 0 60 40"><circle cx="30" cy="20" r="9" fill="none" stroke="#fff" stroke-width="3"/><path d="M30 4 V10 M30 30 V36 M14 20 H20 M40 20 H46" stroke="#fff" stroke-width="3"/></svg>
+  </div>
+
+  <div class="sec">
+    <div class="ch-no">02 / WHY NOT LEAVE</div>
+    <h2>我为什么没有直接离开</h2>
+    <p>我并不排斥家庭资源。相反，我一直认为，上一代已经积累下来的项目、资金、人脉和经验，本来就应该成为下一代的杠杆。</p>
+    <p>我也不想为了证明自己，故意离开一切从零开始。</p>
+    <div class="quote"><p>我真正想知道的是：当家庭资源、我的旅行经验、审美、商业能力和现在的 AI 工具叠加到一起，我究竟能够创造出什么？我的能力上限在哪里？</p></div>
+  </div>
+
+  <div class="photo small"><span class="tag">📷 照片位 02</span>你在家学 AI / 工作台画面</div>
+
+  <div class="band">
+    <svg width="60" height="40" viewBox="0 0 60 40"><path d="M2 30 Q15 10 30 30 T58 30" fill="none" stroke="#fff" stroke-width="3"/></svg>
+  </div>
+
+  <div class="sec">
+    <div class="ch-no">03 / THE REAL PROBLEM</div>
+    <h2>真正的问题不是忙，<br>而是失去自己的节奏</h2>
+    <p>让我耗尽的，不只是工作量。更难的是，我同时是女儿、项目发起者、运营负责人和家庭资源的使用者。</p>
+    <p>当外部结构一直不确定时，我以前最习惯的日计划开始彻底失效。我每天排好任务，等待一个回复，计划被打断，再重新安排。</p>
+    <div class="quote"><p>最后，我不是没有做事，而是每天都在重新经历一次"没有完成计划"的失败。</p></div>
+    <p>更早发现问题的其实不是我的头脑，而是身体。我开始烦躁，失去对食物和日常的感觉，创造力下降，只想离开。</p>
+  </div>
+
+  <div class="band ochre">
+    <svg width="60" height="40" viewBox="0 0 60 40"><circle cx="30" cy="20" r="9" fill="none" stroke="#fff" stroke-width="3"/></svg>
+  </div>
+
+  <div class="sec">
+    <div class="ch-no">04 / THE SYSTEM WAS WRONG</div>
+    <h2>核心判断：系统错了</h2>
+    <p>后来我意识到，也许问题不完全是我不自律。也许是我一直在使用一套不适合自己的时间系统。</p>
+    <p>日历把每一天切成相同大小的格子，好像明天的我，理所当然拥有和今天相同的能量、专注力和表达欲。但身体从来不是平均运行的。谁规定，生活和工作的最小单位必须是一天？</p>
+    <p>我开始不再把任务绑定到某一天，而是建立：</p>
+    <ul class="list">
+      <li>本周真正需要完成的结果；</li>
+      <li>一个不绑定日期的任务池；</li>
+      <li>不同任务需要的能量类型；</li>
+      <li>我当下真实的身体状态；</li>
+      <li>AI 可以提前完成的资料、整理和草稿；</li>
+      <li>每周一次结果复盘。</li>
+    </ul>
+    <p class="lead">日历只负责会议、航班、交付和外部承诺；身体节律开始负责我的创作、研究、沟通、恢复和重大判断。</p>
+  </div>
+
+  <div class="band">
+    <svg width="60" height="40" viewBox="0 0 60 40"><path d="M2 30 Q15 10 30 30 T58 30" fill="none" stroke="#fff" stroke-width="3"/></svg>
+  </div>
+
+  <div class="sec">
+    <div class="ch-no">05 / WHY AI, NOW</div>
+    <h2>AI 为什么在这时出现</h2>
+    <p>也正是在这三周里，我开始密集学习 AI。不是因为我想追逐最新工具，也不是为了让自己工作更多。</p>
+    <p>我想搭建一个新的系统：即使青旅谈判暂时没有结果，我也不需要把整个人生停在那里。</p>
+    <p>AI 没有替我决定要不要继续青旅。但它开始帮我把散落的人生经验，变成可以继续推进的内容、产品和独立事业。</p>
+  </div>
+
+  <div class="photo small"><span class="tag">📷 照片位 03</span>冲浪 / 瑜伽 / 身体活动画面</div>
+
+  <div class="band ochre">
+    <svg width="60" height="40" viewBox="0 0 60 40"><circle cx="30" cy="20" r="9" fill="none" stroke="#fff" stroke-width="3"/></svg>
+  </div>
+
+  <div class="sec">
+    <div class="ch-no">06 / WHAT'S NEXT</div>
+    <h2>这个公众号以后会写什么</h2>
+    <p>这里不会只讲 AI，也不会只讲家庭、旅行或者效率。我会记录：</p>
+    <ul class="list">
+      <li>一个年轻二代如何使用家庭资源，同时建立自己的事业；</li>
+      <li>一家青旅从想法到开业，以及开业之后真正发生的事；</li>
+      <li>我如何用身体节律，替代让我反复失败的传统日历系统；</li>
+      <li>AI 怎样进入我的知识、内容、产品和个人公司；</li>
+      <li>冲浪、旅行和季节性迁移，怎样成为生活结构，而不是工作后的奖励；</li>
+      <li>一项方法从个人实验，到有人愿意使用和付费的全过程。</li>
+    </ul>
+    <p class="lead">我不会假装自己已经拥有完整答案。这个账号本身，就是答案形成的过程。</p>
+  </div>
+
+  <div class="cta">
+    <h3>第一轮公开实验 ·《7 天非日历节律实验》</h3>
+    <p>它适合那些：每天都在做计划、改计划，再因为没完成而难受的人；能量起伏很大，却仍有真实项目需要推进的人；不想继续被日历支配，也不想用"随性"逃避责任的人。</p>
+    <p>明天，我会正式公布第一期的规则和招募方式。</p>
+    <span class="pill">后台回复「节律」· 先领说明</span>
+  </div>
+
+  <div class="foot">
+    <div class="qr">公众号二维码<br>占位</div>
+    <p>关注《多多的未完成实验》&nbsp;·&nbsp;和未完成的我，一起实验</p>
+    <div class="sig">多多 · Duoduo</div>
+  </div>
+
+</div>
+</body>
+</html>
