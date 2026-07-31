@@ -1,11 +1,78 @@
 ---
 name: duoduo-video-edit
-description: 多多个人 IP 号视频制作——基于 capcut-cli 的剪映草稿自动化流水线（竖屏 9:16）。覆盖：本地工具链部署（ffmpeg/ffprobe/capcut-cli）、素材方向探测、从零建草稿、加视频/字幕/标题、横拍自动裁 9:16、代理预览、导出给用户在剪映渲染。当用户要做抖音/小红书竖屏短视频、提到「剪映草稿/自动剪辑/出片/capcut」时触发。
+description: >
+  多多个人 IP 号视频制作全流程——素材审片（联系表+人脸识别+分级）、
+  capcut-cli 剪映草稿自动化、ffmpeg 直出成片。覆盖：素材目录→联系表生成→AI 审片分级→
+  人脸找多多→视觉板 HTML→剪映草稿/ffmpeg 成品。触发词：剪映草稿/自动剪辑/出片/capcut/
+  素材审核/审片/找多多/联系表。
 ---
 
-# 多多竖屏 IP 视频 · capcut-cli 自动化
+# 多多视频制作全流程 · 素材 → 成片
 
-路线：AI 写剪映/CapCut 草稿 JSON（`draft_content.json`），用户开剪映一键渲染。无需 GUI 自动化，跨平台，零重复手动劳动。
+路线：素材审片 → 分级筛选 → 剪映草稿 / ffmpeg 直出。无需 GUI 自动化，跨平台。
+
+## 脚本工具
+
+| 脚本 | 用途 | 依赖 |
+|---|---|---|
+| `scripts/contact_sheets.py` | 素材目录 → 联系表（动态条/关键帧条/高清照片缩略图）+ manifest.csv | ffmpeg + Pillow |
+| `scripts/face_id.py` | 人脸向量身份判定：build/check/batch/video 四模式 | insightface + onnxruntime + opencv |
+
+### contact_sheets.py — 素材审片联系表
+
+```bash
+# 全量（Live Photo + 视频 + 照片）
+python3 scripts/contact_sheets.py --src <素材目录> --out <输出目录>
+# 只跑照片
+python3 scripts/contact_sheets.py --src <素材目录> --out <输出目录> --mode photo
+# 指定 ffmpeg、子目录当正片视频（如 Caz）
+python3 scripts/contact_sheets.py --src <素材目录> --out <输出目录> --video-dirs Caz
+```
+
+产出：
+- `sheets_live/*.jpg` — Live Photo 5 帧动态条联系表（3 列 × 7 行，每格=1 段的动态预览）
+- `sheets_video/*.jpg` — 视频关键帧条联系表（2 列 × 7 行）
+- `sheets_photo/*.jpg` — **高清**照片联系表（4 列 × 6 行，**44px 大字 ID**，可读！）
+- `manifest.csv` — 全部素材索引（id, type, duration_sec, sheet）
+
+⚠️ **照片联系表必须用大字 ID**：早期用 8 列小缩略图，审片员反馈「ID 读不清」→ 整批审核作废重做。格子太小 = 审核等于没做。已修正为 4×6 大格 + 大字标签，不可改回小格。
+
+### face_id.py — 「这张图里是不是本人」
+
+```bash
+# ① 建档：放确认过的正脸照进 refs_raw/
+python3 scripts/face_id.py build [--id-dir <工作目录>] [--exclude IMG_8577_face1,...]
+# ② 单图判定
+python3 scripts/face_id.py check <图片> [--id-dir <工作目录>]
+# ③ 批量扫目录
+python3 scripts/face_id.py batch <目录> [--recursive] [--id-dir <工作目录>]
+# ④ 视频/Live Photo 抽帧判定（帧级投票）
+python3 scripts/face_id.py video <视频文件> [--frames 8] [--ffmpeg <路径>]
+```
+
+铁律：
+- **build 后必须逐张看 refs_cropped/**：合影常混进别人（路人/长辈），混进会把整个 ID 向量拉偏导致全盘误判。发现杂人用 `--exclude` 剔除重建。
+- **距离用余弦距离**，不是欧氏距离。阈值需用负样本实测标定（本人 0.25–0.50 vs 非本人 0.92 → 阈值 0.75）。
+- **人脸向量是生物特征数据，绝不推送到公开仓库**。`face_id.pkl` / `refs_*` 本地留存。
+
+## Phase 0：素材审片（新项目第一步）
+
+当用户给了一整批原始素材（几百到几千张），在动剪辑之前先做这件事：
+
+1. **生成联系表**：`contact_sheets.py --src <素材> --out <审计目录>`
+2. **AI 并行审片**：把 sheets_live / sheets_video / sheets_photo 分给多个 Agent 逐张看，每段评 A/B/C/D
+3. **人脸找本人**：对含人物的素材跑 `face_id.py batch <目录>` 或 `face_id.py video <mov>`
+4. **合并 SELECTS**：写一份分级文档（A=主镜头 B=连接 C=备用 D=弃）+ 授权清单（他人正脸）
+5. **建视觉板 HTML**：用 html-anything skill 出单文件 HTML，A 级精选带真实图片预览
+6. **写剪辑指南**：基于 SELECTS 给出骨架时间线 + BGM 方向 + 调色 + 转场 + 时长控制
+
+评级标准参考（按项目调）：
+- **A** = 主镜头级：画面美 + 动态/构图好 + 内容切题
+- **B** = 可用连接/空镜：氛围或信息有用
+- **C** = 备用
+- **D** = 弃：糊/抖/无关/无动态
+
+人物识别纪律：不确定就写「有人物·身份不确定」并描述外观，**绝对不要编造画面里不存在的人**（grill-me 红线）。
 
 ## 工具链路径（已部署于本机，勿重复安装）
 - **ffmpeg / ffprobe**：软链在 `/Users/Zhuanz/.workbuddy/binaries/ffmpeg-bin/{ffmpeg,ffprobe}`（v7.1）。每次运行前：
