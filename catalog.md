@@ -92,3 +92,7 @@
 ## qu-ai-wei
 - 文件数：89
 - 用途：| 去除简体中文文本里的 AI 写作痕迹,不虚构事实,让终稿干净、精准。 触发:显式 `/qu-ai-wei`,或用户说「去 AI 味 / 改得说人话 / humanize 中文 / 改自然点 / 读着别扭 / 太生硬了」时自动调用。 约束:按「冲突仲裁顺序」六级执行;终稿强制附打磨报告。 范围:只
+
+## duo-podcast-workbuddy
+- 文件数：1
+- 用途：WorkBuddy 平台播客生产权威标准（EP11 v4b 验证）。生成/修复/混音/质检多多中文双声线 AI 播客：克隆多多声线（A）、固定男声 co-host（CustomVoice voice="dylan"）、插入片头片尾/SFX、诊断定点音频缺陷、导出可发布 MP3。与 codex 的 duo-podcast 是独立分支（男声 dylan / A 清脆 / 禁用 time_stretch 与 temp0），不可互套参数。
