@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-11T22:23:55",
+  "generated": "2026-08-11T15:26:25",
   "repo": "faifaida/duoduo-skills",
   "skills": {
     "daily-diary-skill": {
@@ -1963,6 +1963,30 @@
       "file_count": 1,
       "files": {
         "SKILL.md": "1e563b5135fe93fffc0c5c52a9636dcf11bdfadfbf52c777b43c1912085251bc"
+      }
+    },
+    "gmail-imap-cleanup": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "793c6b34158b8b6af40be6c87d24ebccaba489ec8ba0742b624b9814f0e6ceb4"
+      }
+    },
+    "journal-review-refine": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "58dc89cd0aee85824edf9c1e3cf08b69e692eb7d3b9608d60efc7d94043f75de"
+      }
+    },
+    "notion-journal-split": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "cfff0d5b6996024cfed63da93de5c17947ff047f77a189619cb4b689d84d29d5"
+      }
+    },
+    "reel-grid-pitfalls": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "de3359d7376f2d0c13ca30971fd12288d4df6ca8d312d135674fbb0043298c79"
       }
     }
   }

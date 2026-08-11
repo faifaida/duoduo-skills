@@ -1,6 +1,6 @@
 # duoduo-skills 技能库总览
 
-> 更新：2026-08-11 · 共 24 个技能 · 权威源：Mac `~/.workbuddy/skills/`
+> 更新：2026-08-11 · 共 35 个技能 · 权威源：Mac `~/.workbuddy/skills/`
 
 ## daily-diary-skill
 - 文件数：2
@@ -100,3 +100,20 @@
 ## shifei-video-edit
 - 文件数：8
 - 用途：剪辑多多的世斐（Shifei）非虚构旅行、人物、现场事件与 Sri Lanka Field Notes 视频。用于人物采访、旅行档案、对谈、现场事件、旁白+B-roll、字幕校对、声音修复、调色、概念卡、封面和交付；当用户要求"世斐""这个人让我看懂了这里""People of Sri Lanka""Field Notes"或复刻世斐人物对谈时必须使用。
+
+## gmail-imap-cleanup
+- 文件数：1
+- 用途：用 Gmail App Password 走 IMAP 批量清理邮箱（改标签/移动/删除上千封），规避 modified-UTF-7 编码坑与 Gmail 限流 BAD 响应。
+
+## journal-review-refine
+- 文件数：1
+- 用途：把 Obsidian 批量生成的「月度/周/年复盘」占位符草稿，升级为有洞察的 AI 精修版（预处理→并行子代理精修→YAML/占位符校验）。
+
+## notion-journal-split
+- 文件数：1
+- 用途：把 Notion 按月聚合的日记页，按正文 M/D 日期拆成独立 Obsidian daily note。
+
+## reel-grid-pitfalls
+- 文件数：1
+- 用途：固定时长网格短视频 reels 的 5 个实战坑（慢动作补长/字幕按 VO 重定时/程序化校验音画同步/品牌 outro 约定）。
+
