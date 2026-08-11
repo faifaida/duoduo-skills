@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-11T16:59:50",
+  "generated": "2026-08-11T17:00:33",
   "repo": "faifaida/duoduo-skills",
   "skills": {
     "daily-diary-skill": {
@@ -344,15 +344,6 @@
         "scripts/cover_photo_registry.json": "64c808a70265b7c9722ce83a6403de75888349f5d6e4bf07567c039103c44aeb",
         "scripts/face_id.py": "9cf1592823b3306a4054ea3942297c80b748ebbb5055473599a2ada922fcb1ec",
         "scripts/make_cover.py": "15319cf163674d2cfdb843c522790571449cec228411a3889ea5684dcdddff12"
-      }
-    },
-    "duoduo-voice-deai": {
-      "file_count": 4,
-      "files": {
-        "CHANGELOG.md": "0013b84049d4096cb7437d834276e672ef6944bd44f4db4bcdda6a8594c94577",
-        "SKILL.md": "61e72a2752cdee745ede569df8ed8cf1c9a89ebdd37eafe5624ccaf1014fe1f6",
-        "duo_社媒通用声纹-skill.md": "3d2881c7e3e6cb2290ac76a9c80ab295fb59cd905acbd3840c482c053d86a948",
-        "references/duoduo_voice_dna.md": "56563316f1382249bbd3f00ef622efb86c909a8dbee8999d1b57f0af6d181667"
       }
     },
     "ffmpeg-libass-drift-drawtext": {

@@ -1,6 +1,6 @@
 # DUODUO Skills Catalog
 
-> 共 19 个技能（合并整理后）。生成于 2026-08-11T16:59:50 UTC。
+> 共 18 个技能（合并整理后）。生成于 2026-08-11T17:00:33 UTC。
 
 ## 合并型技能（consolidated）
 
@@ -54,10 +54,6 @@
 
 ### duoduo-video-edit
 - 文件数: 12
-- 说明: 
-
-### duoduo-voice-deai
-- 文件数: 4
 - 说明: 
 
 ### ffmpeg-libass-drift-drawtext
