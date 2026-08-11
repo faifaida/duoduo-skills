@@ -1,0 +1,28 @@
+name: validate-skills
+
+on:
+  pull_request:
+    paths:
+      - 'skills/**'
+      - 'skills-manifest.json'
+      - 'catalog.md'
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+      - 'skills-manifest.json'
+      - 'catalog.md'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate SKILL.md frontmatter, no node_modules, manifest consistency
+        run: python scripts/validate_skills.py
