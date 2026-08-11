@@ -1,273 +1,297 @@
 {
- "generated": "2026-07-29T20:58:15",
- "repo": "faifaida/duoduo-skills",
- "skills": {
-  "daily-diary-skill": {
-   "file_count": 2,
-   "files": {
-    "diary-structure.md": "71a40d4a0051a09cda005118b7c92c873eab49611dd28807ff6194b89fd792d3",
-    "SKILL.md": "2bcb6b02bdacf96fa4193e6b80d986233e0487243e0705a4f2d4c30c88b32c9a"
-   }
-  },
-  "duo_longpic-gen": {
-   "file_count": 13,
-   "files": {
-    "README.md": "6e4d9cf4161c0721513384d611fe9ca71ea22da70b7323623e13872fa36d6249",
-    "SKILL.md": "b25478d7d46c2287802bfacdd26ae8cb635b8c6455cdf680ff76bc5892b8ce07",
-    "references/visual-dna.md": "23cd20c197acd1167f4cd0f33160c4c3cdde2bc520dc5f3663dc2401097274c1",
-    "references/production-pipeline.md": "ce534606aadcbfa0457ddace63b8a01f23063dbc857f8b1b1d9f9879930f1409",
-    "references/layout-recipes.md": "7f55e92b7e4885935831829efa11e462f190a3550e5e9885b2218d77ecc9af3d",
-    "checklists/QA.md": "bdd6bc919afcb9ae4f3add3be126c73a5cc627613efbecc47f6a02d20bf3b7a2",
-    "examples/example-storyboard.yaml": "6610a702446c7311ecf61f4b82d6be852922a41cc896f50f2c2b493c139d0f7e",
-    "examples/example-brief.md": "b5a34eebfd80bfdc51c33352ef82101e1e8e1d1c4d93965de435bc3b85ed2bc1",
-    "templates/input-brief.md": "6d740158ef016cf3286d295d904c8d1f7f13284a2ebc72e00681bd489c34c830",
-    "templates/storyboard.yaml": "0ccdc3056bac6cdf89ba847cc2a132089fd9fb86af5aacfdbf63fe4fb7d63df5",
-    "templates/design-tokens.json": "68faad6dc11ea2433d1fa29afb9093d7d78c41624067bbd38772f480220d4db9",
-    "assets/reference_part_02.png": "984c1fe3946658f1b18a2285accb6e8c0a0075fb10a5f81686a378c1c6333bd6",
-    "assets/reference_part_01.png": "85e2bee8ef7d95c549ccafc3611c6e8bdf823d7d5ad0687c4fb7e9cc8f7bb2c1"
-   }
-  },
-  "duoduo-approval-detect-and-release": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "3099f6fbd66011f3dd0a696243107c65e4cdd161da5dec1e0b851634f97a866b"
-   }
-  },
-  "duoduo-caldav-calendar-write": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "802f24adbfb36784181caa4052da17d45d780c7faea55e6f0a6244769116c7c0"
-   }
-  },
-  "duoduo-company-daily-os": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "18e7b0dd7f3c23af0690525514bdef787d66d7a04739c6cec5bdce39d33da5e8"
-   }
-  },
-  "duoduo-company-night-patrol": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "e1c327551b9c96730ecc5a7cdceeb7dcc842df05eb97c9532521d5cfde746921"
-   }
-  },
-  "duoduo-design-system": {
-   "file_count": 14,
-   "files": {
-    "brand-dna.md": "7f56372f797d1fc74e2be84181372142b793e737ee099d31b70a49eb6be040e5",
-    "SKILL.md": "d49d2bb77300ab94b4f341f3e3a183929acb5e14b4fe0b4a8bb4ba03bd611f48",
-    "references/scene-wechat.md": "6a338431085fa0521da5ae263a58b4b5091c2b42b873fce4eeff559d26dcf3e4",
-    "references/scene-landing.md": "e90025fbff6469972ba43181f9b3a74bba73ed2bcabff97a89e084e62c9b34b1",
-    "references/components.md": "01e881b9388fa09b491fd8cf068ac7760d4c698d8dc75395977f91999cbf2e46",
-    "references/scene-app.md": "bacba2c8cb4d6b70f49670371cc6d620dca90a611712574128f99ed78d68a503",
-    "references/layouts.md": "4577d3e1fdaad5b3b6668a053ed3f821cdc18cbafbf1a48bf9c9e1b98fe34105",
-    "references/checklist.md": "47bbe8065c55807cfde8b292e7da99619a9abea01e83a87d06debeffabb5fbd6",
-    "references/scene-tutorial.md": "1c6bc597f0ac416d884f973da27b2bb85d7a662485063aaccdbfc4d8b5f05ea2",
-    "references/scene-cards.md": "4ce25bb1a8d33dd0124b4f1a68382c97acf651448d9eff7b056d6a42e5cc7f7a",
-    "assets/template-cards.html": "3d0621f4ba502766f6d122bc9cd4e911c0033b9078a8d78719810e17f4380bac",
-    "assets/template-brand.html": "94cbe7fa193cc88e8c15acebb3e0632b0a2e3766754207e474119fd622d73a46",
-    "assets/template-landing.html": "2b5330814d0b01cdf117a4e93e0073a1cef6f6e6d54e0ac2a5ee42620374a1d8",
-    "assets/motifs.svg": "06683b1c4d2f745c1ceb5e9011d70b3d74a7bd0aa1a3b0a1a835a6a65920617c"
-   }
-  },
-  "duoduo-diary-to-calendar-pipeline": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "36b38bd0dbc18e4da3f875e48310a91ab79912a2fc4e1eba40474ea042f003d2"
-   }
-  },
-  "duoduo-expert-hourly-patrol": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "cfb9e2b482fc4f62d8f2d601791d341b80ca2d96a3cfd5c685ee64000a09de8f"
-   }
-  },
-  "duoduo-github-sync": {
-   "file_count": 3,
-   "files": {
-    "skills-manifest.json": "2ed838479ba8cad0879f692b66d207073f3b68650775b2949de857930acdad5b",
-    "SKILL.md": "59a08b415c5ba02d66ac04e3da255b6f79bdbbf9a38dad755588617953186ec2",
-    "catalog.md": "ecff1fff4a36d9ce43298400f6d8c0498b52b3d65b5918bfa58997096121f97e"
-   }
-  },
-  "duoduo-netease-transcript": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "e3727ea06799502a2f34f3a25f4fb0d699a25c187261f7d15f0b79f2eb6ce007"
-   }
-  },
-  "duoduo-podcast-build": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "931d7e1ecd9eb6c3486e0a792bbe825bd48c4695d9453421027f8d68e9a49169"
-   }
-  },
-  "duoduo-podcast-sync": {
-   "file_count": 7,
-   "files": {
-    "SKILL.md": "c8964b6cf9cc6ac5481c77aa5e0c971e603cb254691f2a72d1b4883955af4f9e",
-    "scripts/run_sync.sh": "edabe1435ba01d6c7c07f4ad10c05894eefa182033763175c6add0c14b7ec2e7",
-    "scripts/xiaoyuzhou.py": "3cd274a3a436550fc0572c5f43f978d88d58fdd76fcd1ddb03a5dafc44059155",
-    "scripts/ensure_headless.sh": "f2908f54fcbfc2c8e8ba2f49c3fbb71aee0c0a2286706feac5ecb2b1c8633886",
-    "scripts/apple_rss_sync.py": "a75f86fcca2fe337044b15cde3bed57139417395b508dbc137ccb27947a84ec9",
-    "scripts/ximalaya_sync.py": "1d224878ecb76f8519a4b81edc4f6cea77e5713c54e1c803e37e86ff9027ef7a",
-    "scripts/state/uploaded_episodes.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
-   }
-  },
-  "duoduo-soul-question": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "ccbb0f98b82cf86f5d73aad154a9d3dac6ca5e28a862a270a2a7e553d16da3df"
-   }
-  },
-  "duoduo-video-edit": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "cf5dccc227853c623ee9c054ae0f185414fa2f5c03ba99996b77064b6686f80c"
-   }
-  },
-  "duoduo-voice-clone": {
-   "file_count": 2,
-   "files": {
-    "SKILL.md": "22433141d5867630c2d4ce735b4fa3fd4b983401e16ebaf3fdbeea10ca318b79",
-    "scripts/clone_and_generate.py": "31336892b727520a1f7884c588246bddbe63d9d0549ebbd2c644ba21b6b43cdb"
-   }
-  },
-  "duoduo-voice-deai": {
-   "file_count": 3,
-   "files": {
-    "duo_社媒通用声纹-skill.md": "3d2881c7e3e6cb2290ac76a9c80ab295fb59cd905acbd3840c482c053d86a948",
-    "SKILL.md": "61e72a2752cdee745ede569df8ed8cf1c9a89ebdd37eafe5624ccaf1014fe1f6",
-    "references/duoduo_voice_dna.md": "56563316f1382249bbd3f00ef622efb86c909a8dbee8999d1b57f0af6d181667"
-   }
-  },
-  "duoduo-wechat-chat-export": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "e32a71fc803a6c43e680237a1eb7d208f7db9ac21ac38595e20b605865e75a8b"
-   }
-  },
-  "duoduo-wechat-publish": {
-   "file_count": 5,
-   "files": {
-    "SKILL.md": "839ca1f6107d8624819d7c0186f3384f5a6a100f85845158d9dd64bfa0e2389d",
-    "templates/A_长卷叙事_1080.html": "736b92f34b20be252c99fecef571542f5437fb80f11c0452c359ed81f46c857f",
-    "templates/B_刊物杂志_1080.html": "adfb94721b720d7b91a514e959a78705280f3c4482f710daaa84d3851b40524c",
-    "templates/C_暗夜海面_1080.html": "1b2b453f89054e5f092a74305c0e1afb531ea380af452a1496d92a08551e95ee",
-    "templates/正式稿_半离职状态_1080.html": "53285c87308086a755f959c7d5bb9596b0deca615e615a2a041b25925c448219"
-   }
-  },
-  "duoduo-weekly-review-calendar": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "2363c6ddd10667adef07b0ffe66af12a33e99a03b4c7fd14a6af42f822f3fe98"
-   }
-  },
-  "duoduo-weread-digest": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "04773e680177dc7ec80274fbb00d57ed55175707183b1c9bb8120fc8ea8d6e20"
-   }
-  },
-  "duoduo-xhs-weekly-digest": {
-   "file_count": 1,
-   "files": {
-    "SKILL.md": "c327f1c9a60e8d569f8bc819850207471566050c5b595d41a229b899591690c1"
-   }
-  },
-  "qu-ai-wei": {
-   "file_count": 89,
-   "files": {
-    "WARP.md": "1899f83ed0a99afdd4c1882a67dafc0ffba4cc3740b0e06aa6a07b984e49a357",
-    "LICENSE": "38afb5701ea731548bf4ec5e9f550e0150cfa5257071114eac0de1ee0902a5ef",
-    "CHANGELOG.md": "5089bae745db856171a5a269012280e8aa42ca255bc1960cd09b4122ad9c8c3e",
-    ".cursorrules": "0df1f5fdb941873d5847f00211ded3322c48b7efed71ad7486182da6238bf09a",
-    "README.md": "764a29bd7a1af1683c0265679adbd7d7dfeb38e0dd4727e788418d6c986bdc5c",
-    "update.sh": "3591c5f000abb6e2bc8cfe261f1029b12e1e1cc1d15c4f6a84210bfdb4180d68",
-    ".gitignore": "7ba280ad44b7d958a296f3c1530533de91ba6af3df4e6564e2a6f9ebee9b6f8d",
-    "SKILL.md": "28ccdd2792a456168e7872f6d9d1186982680128240b38516bf83c84ea272beb",
-    "AGENTS.md": "4c0b9caeee796dc67664d32bbec97d23ae2cf5dfab5cea711e14222371511509",
-    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
-    "references/reference-models.md": "7fe4dd11ba0be79c1220f243f39924b7093f2bfa0b368403ce8c1203e9c5dfee",
-    "references/examples.md": "e3e2f3ac42b6f8419c24abeeb333faf9417503f19d6d719c273f1d9c2a818b39",
-    "references/syntax.md": "262c60f4d913156172d99ca0f36ecc5db8f5311f807fcb0f49c62e178f13dbd5",
-    "references/sources.md": "ffad04b402e32e00ea983d4a6c4e2de8e4ac6356878be15b0a435d38d1053166",
-    "references/platform-patterns.md": "89895dd905875faf8ad1c4409ba5dc46fb720842e2ec23868e7752e69e447d65",
-    "references/patterns.md": "79a03369370d50219272c97cd51b196ec4befb2479c8c16ce9db89be7febb931",
-    "references/whitelists.md": "75b7a94cf6d98538017f6492e446a16dbdad7dce1394681b54e4cfaf9026bed5",
-    "references/brand-voice.md": "70f85086589db6db43ac3b9792d1526ba182d3b6e5f7aa750d103a6ca6a831f1",
-    "references/punctuation.md": "b20be77d98a87a2f89cf2ae54e6c1a395b495238b2fa009a44613d5300be2107",
-    "tests/eval-manifest.txt": "1669d0ddf8857e99b2bb765518e50be6e55e6f3becc1591bb0e3c0471347cebe",
-    "tests/check-version-sync.sh": "9a99e9153010a2d52de26f400587b218122fb2969736a1b7506ae8b5057537c9",
-    "tests/check-skills-cli-discovery.sh": "711ad2b682f2cacf1740436e7b7657df44a9746fd3b6341cdf032c4ac5c52795",
-    "tests/check-runs.sh": "5131c9c03873de4b6ee0a7d43fa440d6750757b89256559767ee92560aa5fd42",
-    "tests/check-flat-sync.sh": "454a214a29d6b37c3369dfc12a6a72c4214f04b731e915ff12978db79f1aacb0",
-    "tests/README.md": "1b8662971cbffc199210ab5b470cb72e299a95e1c6ed38bbb6e2500f4d17b2ca",
-    "tests/trigger-manifest.txt": "eb4a8f406f672f262f5524344167df0f534e19b75374924f51b73973811735bf",
-    "tests/check-triggers.sh": "89f788b59980e15831037dc642554748103a74b8a14a79a75801193cd73ea561",
-    "tests/check-snapshot-smoke.sh": "e5c2d3b16175fafca7947d60f299209bbe2bc92b99527dea5ce78228c2090049",
-    "tests/baseline/01-output.md": "ef37a5ecef74289f49fe4bb5a6ee27bd17a132d4cd8dda407f95b771d5213498",
-    "tests/baseline/03-output.md": "acfe4900ead3b3303edb57f4fcada9b83ae708b4141675616dd5c9219c679d44",
-    "tests/baseline/02-output.md": "577f0efa5f3c2856023aa235403f35c090ffc433094100d39d720e17b4bd6f15",
-    "tests/fixtures/17-xhs-home.md": "d26ed28f5aa50d98966dc5614724b40f5c674e0f370c7c042cf44b9ab02357e0",
-    "tests/fixtures/02-gongzhonghao-weishendu.md": "95823c3e7c10ec3b02404046408d1d621a67e963ad379caaf2587df0001b33dd",
-    "tests/fixtures/corpus-queries.txt": "12d3e1870fe85a4273d2d4653f22bc0d2cc8aae81a07d150fec8f91ab3a517a7",
-    "tests/fixtures/06-brand-voice.md": "59e9579550ce9381877c15eff64cef77cc99dd5c642210b2fc56dacdeefc6f6a",
-    "tests/fixtures/05-human-stop.md": "7b734b33b41c8982ef4da1aabfb90beeb0abd1cacd69e1b791c22f634a9f51b8",
-    "tests/fixtures/15-xhs-office-tips.md": "8596d18b8f5835c1c4b7e7046bca0fbd6e68c380f62830675d3a3a83361806ba",
-    "tests/fixtures/13-xhs-classic-templates.md": "a2daeb962f2acd96de46d5ae88db8e8a81dcb395243b45f0a04292f92202f199",
-    "tests/fixtures/18-fake-candor-aphorism.md": "fd8d93cff5572dea4dfba8c9075106c891b1bb73f1f280c47218a2e1c55cdaaf",
-    "tests/fixtures/09-xhs-healing.md": "37b4cc846e91853c17c46bf825b24df79b43e5a7bcc5aabbf27734818fec28db",
-    "tests/fixtures/corpus-queries-batch-2a-language-hf.txt": "1ebbecf7929593360f64b2a91b813356d2a08d9ba6005843a0b9607f13bb2b62",
-    "tests/fixtures/12-table-abuse.md": "9cbde3ccb1f6621594f914587c40025404f47a8339cf2e872cb1e4ef4fb6f6a0",
-    "tests/fixtures/corpus-queries-batch-1-content.txt": "03dc0a5b2b6f321ebc270064ef39f7bfc5e7d84dd34d269228c7c63ee1467f82",
-    "tests/fixtures/01-ai-zh-overview.md": "c0aedd6131751458faf5a0f9491d0620d9da6f96625780fd778ffc400aaadcdd",
-    "tests/fixtures/08-weishendu-consulting.md": "6299c7ad7dab5e22dc5b563627e42b76ac69e8224870eeded9c2197fbbf4bb2b",
-    "tests/fixtures/11-negation-stacking.md": "451d646e71a9b4e082c8c6f578df10db848c4fd1b54a452352f71265f7c25a4a",
-    "tests/fixtures/03-xhs-kimi-anli.md": "7e041b55dca89911113a84397ba82a993561af9bf6f38d25f860cd8c7396fe91",
-    "tests/fixtures/10-bilibili-script.md": "78b6cf569d98cf37e05b39243f8225426f0ff91f34d50acac15be2e4e4b6f948",
-    "tests/fixtures/04-negative-pairings.md": "dff3ade8df43b2c863b38068aa6ac6bc8f198eb2ef3e80896d484e37015e1d56",
-    "tests/fixtures/14-xhs-ootd.md": "86f2c1caaba010656de22d53ee8f9731b8de4d0292f0a70c0f331490e3028c27",
-    "tests/fixtures/corpus-queries-batch-4-fillers-translation.txt": "81ee05d1702dda151275f82338655a262362e6797d58841ffd0c30c4b5bd0d91",
-    "tests/fixtures/corpus-queries-clean.txt": "7666a1178426950fe5066be6ccf78adfb1a0feba4e9cdea441a40390f917c704",
-    "tests/fixtures/corpus-queries-batch-2b-language-rest.txt": "a926081c02888195ce6f1ff448d0e666fcfe24da2df6086337cd0198f8ae74e9",
-    "tests/fixtures/corpus-queries-batch-5-platform.txt": "8807c9d4bc1f2a4a416ab2d07bb1b44fbfde60f151b418445867959731721ae4",
-    "tests/fixtures/16-xhs-skincare.md": "dd65217b2f9512355dfc3608f3dfdfae8d563bbf3f9d9f4a8393bb6ba9eacc23",
-    "tests/fixtures/corpus-queries-batch-3-rhetoric-dialogue.txt": "89ea0cf78542f00e2080e4052b1db72eb1e7131f638bc5be35566eed324b1ef6",
-    "tests/fixtures/07-academic-tech.md": "d06515876acb299ebc9d85a5c103790bbf8b96eef2ec0cd50343a65d7206529d",
-    "tests/fixtures/corpus-queries-batch-6-popwords-whitelist.txt": "e3d412b1984618cab4cf2b02b3fc368f839a62cd076f3b368d5f0a4335ff4e96",
-    "tests/after/18-output.md": "c3cc1327078bff811cb5111e953a591d4f22d00eb7032ae03e92df10a264783f",
-    "tests/after/01-output.md": "f95ea2f5c347a4c36f6e07c6b5d0a1438e68077bda375b5525293eec690e4e92",
-    "tests/after/15-output.md": "868ef67e8cb17d655f7f6e52ec94280b8bed7741f72abe0580ea4bedc8022dd1",
-    "tests/after/07-output.md": "155de5e2917ce0a91bd6d4a27c58334be08114808d12c5ebfb03061bf8056f29",
-    "tests/after/13-output.md": "143b873bafc4fd3ee225096b22522034ebc8333659e8aa224fe43dd00a3cf68d",
-    "tests/after/14-output.md": "e160530fa62f357b031cc0fa6dfde9466b9a101e8e64513c0e719e9dcfc3d3d7",
-    "tests/after/12-output.md": "13b3d523ffccc2bf714834d5d8349dbc7367bad6bd5b5bc2342c85b7cc113e4d",
-    "tests/after/06-output.md": "ce533dbfb615b890b9ea98547ada4dc3986af3756a64878e2c9160ae9f1d9884",
-    "tests/after/03-output.md": "af57d304ef4441a3d301033a3b57c38d925b7791d8ad2b13e384207c79d3f1b0",
-    "tests/after/17-output.md": "855dcb27727c81906907ecb529225d2a7ccd5f8920adb0c2ef777ee417fff93e",
-    "tests/after/08-output.md": "7c7051b3d6a4481015c4168c240384f41e67a6d46a40cdd57528ec42cafaa040",
-    "tests/after/05-output.md": "ac7fe9cda6da9acbbc1af4c8ed44281e76ea4c3daaf1037f643b9f1e9a411b1d",
-    "tests/after/11-output.md": "8a398b7e5d92f9646d466645efe55c637c8604d8ea098be5a08e15893f61fb95",
-    "tests/after/01-output-rerun.md": "aca1b2e0082d7ec54223a2f5d911bd9791f0dbc08bdbc38378a532379538713f",
-    "tests/after/16-output.md": "1a04d861bca346bb7f7ac2a228a08509b46b97e86da8741f697f30a3b71bc54e",
-    "tests/after/02-output.md": "abf052bfa37bd6cd9d0563fe5c619fa23ad9bfdbffd2607da543449c7fedb5cd",
-    "tests/after/09-output.md": "d1f82ba3cbea0e7a73efde18bb999225a13ea44cc0b5d284c0a4836de5d33c4d",
-    "tests/after/10-output.md": "b8f3bd76b8858d5cb0a4b9d4013a17531e7676e104444f19d9eef3f93ff6ca23",
-    "tests/after/04-output.md": "e49f760f75dcb7401754e8e794166af437dcd7ff74d88ece3d67a8529b8d026b",
-    "tests/runs/README.md": "f1dd555ecee1b69482765b1e59839d795e3f93319610d677c45d8a257a2f1563",
-    "docs/agentskills-review.md": "c5503c970e1ac8d4d63529b9db307f9cc3e3ed7a2664ffcaba075e5b5d5bce48",
-    "scripts/install-skill.sh": "665a00041ea2a11a0e2b41b5b62e8a54c8b1324be128be020f3a73892ee59ac3",
-    "scripts/build-flat.sh": "b9b39d15c9ce894a8955abec0ac71bbfbe41afebf2cfa5abb92fe97b2d7b5473",
-    ".github/workflows/release.yml": "3da64e6f2a6050f4af67fdc637a03dca785423696b010c635946c1fd00abdce3",
-    ".github/DISCUSSION_TEMPLATE/show-and-tell.yml": "75ec9e5f91dc0bf70feef035262d3f8baf55dc0bd306e26dcc3b9bee07edb81e",
-    ".github/ISSUE_TEMPLATE/pattern_suggestion.yml": "b78302b0b5a68db6394150f1ff738138990f9465b75db24f5b98e4e75ec935b6",
-    ".github/ISSUE_TEMPLATE/bug_report.yml": "709afd362ec860abbddf43af79fce5be4456dc1335c58cfaaf9e255830ea533d",
-    "readmes/README.en.md": "048ea468c2b8edc211912aae1b856e5f5328680299149aff985c941bca94ac47",
-    "readmes/README.es.md": "5782dbb42714b3e0fb099ce1d6a96e91a1b9203b3ce8ec9e04b04f02c4a93029",
-    "readmes/README.ja.md": "66b7ebe37ef443c34d86d158f268ce32c527cfdba8ddac2dcedff2b7052ff141",
-    "readmes/README.ko.md": "ed12f4def2475f4e94514565f92675b71d7254fec8762135429900d1d4dbfe0f"
-   }
+  "generated": "2026-08-11T21:33:29",
+  "repo": "faifaida/duoduo-skills",
+  "skills": {
+    "daily-diary-skill": {
+      "file_count": 2,
+      "files": {
+        "diary-structure.md": "71a40d4a0051a09cda005118b7c92c873eab49611dd28807ff6194b89fd792d3",
+        "SKILL.md": "2bcb6b02bdacf96fa4193e6b80d986233e0487243e0705a4f2d4c30c88b32c9a"
+      }
+    },
+    "duo-podcast-workbuddy": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "c5482de128a72ed2ddbdab424039d1fcb18d27ce52b9b9fa3f7e456f41c47f05"
+      }
+    },
+    "duo_longpic-gen": {
+      "file_count": 13,
+      "files": {
+        "README.md": "6e4d9cf4161c0721513384d611fe9ca71ea22da70b7323623e13872fa36d6249",
+        "SKILL.md": "b25478d7d46c2287802bfacdd26ae8cb635b8c6455cdf680ff76bc5892b8ce07",
+        "references/visual-dna.md": "23cd20c197acd1167f4cd0f33160c4c3cdde2bc520dc5f3663dc2401097274c1",
+        "references/production-pipeline.md": "ce534606aadcbfa0457ddace63b8a01f23063dbc857f8b1b1d9f9879930f1409",
+        "references/layout-recipes.md": "7f55e92b7e4885935831829efa11e462f190a3550e5e9885b2218d77ecc9af3d",
+        "checklists/QA.md": "bdd6bc919afcb9ae4f3add3be126c73a5cc627613efbecc47f6a02d20bf3b7a2",
+        "examples/example-storyboard.yaml": "6610a702446c7311ecf61f4b82d6be852922a41cc896f50f2c2b493c139d0f7e",
+        "examples/example-brief.md": "b5a34eebfd80bfdc51c33352ef82101e1e8e1d1c4d93965de435bc3b85ed2bc1",
+        "templates/input-brief.md": "6d740158ef016cf3286d295d904c8d1f7f13284a2ebc72e00681bd489c34c830",
+        "templates/storyboard.yaml": "0ccdc3056bac6cdf89ba847cc2a132089fd9fb86af5aacfdbf63fe4fb7d63df5",
+        "templates/design-tokens.json": "68faad6dc11ea2433d1fa29afb9093d7d78c41624067bbd38772f480220d4db9",
+        "assets/reference_part_02.png": "984c1fe3946658f1b18a2285accb6e8c0a0075fb10a5f81686a378c1c6333bd6",
+        "assets/reference_part_01.png": "85e2bee8ef7d95c549ccafc3611c6e8bdf823d7d5ad0687c4fb7e9cc8f7bb2c1"
+      }
+    },
+    "duoduo-approval-detect-and-release": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "3099f6fbd66011f3dd0a696243107c65e4cdd161da5dec1e0b851634f97a866b"
+      }
+    },
+    "duoduo-caldav-calendar-write": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "802f24adbfb36784181caa4052da17d45d780c7faea55e6f0a6244769116c7c0"
+      }
+    },
+    "duoduo-company-daily-os": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "18e7b0dd7f3c23af0690525514bdef787d66d7a04739c6cec5bdce39d33da5e8"
+      }
+    },
+    "duoduo-company-night-patrol": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "e1c327551b9c96730ecc5a7cdceeb7dcc842df05eb97c9532521d5cfde746921"
+      }
+    },
+    "duoduo-design-system": {
+      "file_count": 14,
+      "files": {
+        "brand-dna.md": "7f56372f797d1fc74e2be84181372142b793e737ee099d31b70a49eb6be040e5",
+        "SKILL.md": "d49d2bb77300ab94b4f341f3e3a183929acb5e14b4fe0b4a8bb4ba03bd611f48",
+        "references/scene-wechat.md": "6a338431085fa0521da5ae263a58b4b5091c2b42b873fce4eeff559d26dcf3e4",
+        "references/scene-landing.md": "e90025fbff6469972ba43181f9b3a74bba73ed2bcabff97a89e084e62c9b34b1",
+        "references/components.md": "01e881b9388fa09b491fd8cf068ac7760d4c698d8dc75395977f91999cbf2e46",
+        "references/scene-app.md": "bacba2c8cb4d6b70f49670371cc6d620dca90a611712574128f99ed78d68a503",
+        "references/layouts.md": "4577d3e1fdaad5b3b6668a053ed3f821cdc18cbafbf1a48bf9c9e1b98fe34105",
+        "references/checklist.md": "47bbe8065c55807cfde8b292e7da99619a9abea01e83a87d06debeffabb5fbd6",
+        "references/scene-tutorial.md": "1c6bc597f0ac416d884f973da27b2bb85d7a662485063aaccdbfc4d8b5f05ea2",
+        "references/scene-cards.md": "4ce25bb1a8d33dd0124b4f1a68382c97acf651448d9eff7b056d6a42e5cc7f7a",
+        "assets/template-cards.html": "3d0621f4ba502766f6d122bc9cd4e911c0033b9078a8d78719810e17f4380bac",
+        "assets/template-brand.html": "94cbe7fa193cc88e8c15acebb3e0632b0a2e3766754207e474119fd622d73a46",
+        "assets/template-landing.html": "2b5330814d0b01cdf117a4e93e0073a1cef6f6e6d54e0ac2a5ee42620374a1d8",
+        "assets/motifs.svg": "06683b1c4d2f745c1ceb5e9011d70b3d74a7bd0aa1a3b0a1a835a6a65920617c"
+      }
+    },
+    "duoduo-diary-to-calendar-pipeline": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "36b38bd0dbc18e4da3f875e48310a91ab79912a2fc4e1eba40474ea042f003d2"
+      }
+    },
+    "duoduo-expert-hourly-patrol": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "cfb9e2b482fc4f62d8f2d601791d341b80ca2d96a3cfd5c685ee64000a09de8f"
+      }
+    },
+    "duoduo-github-sync": {
+      "file_count": 3,
+      "files": {
+        "skills-manifest.json": "2ed838479ba8cad0879f692b66d207073f3b68650775b2949de857930acdad5b",
+        "SKILL.md": "59a08b415c5ba02d66ac04e3da255b6f79bdbbf9a38dad755588617953186ec2",
+        "catalog.md": "ecff1fff4a36d9ce43298400f6d8c0498b52b3d65b5918bfa58997096121f97e"
+      }
+    },
+    "duoduo-netease-transcript": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "e3727ea06799502a2f34f3a25f4fb0d699a25c187261f7d15f0b79f2eb6ce007"
+      }
+    },
+    "duoduo-podcast-sync": {
+      "file_count": 7,
+      "files": {
+        "SKILL.md": "c8964b6cf9cc6ac5481c77aa5e0c971e603cb254691f2a72d1b4883955af4f9e",
+        "scripts/run_sync.sh": "edabe1435ba01d6c7c07f4ad10c05894eefa182033763175c6add0c14b7ec2e7",
+        "scripts/xiaoyuzhou.py": "3cd274a3a436550fc0572c5f43f978d88d58fdd76fcd1ddb03a5dafc44059155",
+        "scripts/ensure_headless.sh": "f2908f54fcbfc2c8e8ba2f49c3fbb71aee0c0a2286706feac5ecb2b1c8633886",
+        "scripts/apple_rss_sync.py": "a75f86fcca2fe337044b15cde3bed57139417395b508dbc137ccb27947a84ec9",
+        "scripts/ximalaya_sync.py": "1d224878ecb76f8519a4b81edc4f6cea77e5713c54e1c803e37e86ff9027ef7a",
+        "scripts/state/uploaded_episodes.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      }
+    },
+    "duoduo-soul-question": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "ccbb0f98b82cf86f5d73aad154a9d3dac6ca5e28a862a270a2a7e553d16da3df"
+      }
+    },
+    "duoduo-video-edit": {
+      "file_count": 11,
+      "files": {
+        "SKILL.md": "d4f248c63937b681fd147a7954e326763353fa9c12d84a8cec27f80a3f0a999c",
+        "references/video_lessons.md": "2ac4e2092830ebeb86b3a4c656c6d88aa04a0d6e7d2b806db302527e4365b4a1",
+        "references/covers_ep1/Film01_Cover_Instagram.jpg": "ca968be72c975494dcaae4324185da6d64c099a6c15f0887790abb28ef497888",
+        "references/covers_ep1/Film01_Cover_Shipinhao.jpg": "f3df37512c1c8153ec5707acdd421d1b87294270e1b98cf6c0c3485a9cb2957f",
+        "references/covers_ep1/Film01_Cover_Final_4x5.jpg": "254297a5861ed63ad08ad9f206f1b156dba1f259c267a587c36cc56c76ba25e3",
+        "references/covers_ep1/Film01_Cover_XHS.jpg": "4e1fc647e25848b2698b24716ce2745d8f5e35538e2f3bee32db37364eb5e56b",
+        "references/covers_ep1/Film01_Cover_Douyin.jpg": "4e1fc647e25848b2698b24716ce2745d8f5e35538e2f3bee32db37364eb5e56b",
+        "scripts/face_id.py": "9cf1592823b3306a4054ea3942297c80b748ebbb5055473599a2ada922fcb1ec",
+        "scripts/make_cover.py": "15319cf163674d2cfdb843c522790571449cec228411a3889ea5684dcdddff12",
+        "scripts/contact_sheets.py": "b45dae45da793f80c605de9504c044e61deed9f1d07a61d2fce560874f560e58",
+        "scripts/cover_photo_registry.json": "64c808a70265b7c9722ce83a6403de75888349f5d6e4bf07567c039103c44aeb"
+      }
+    },
+    "duoduo-voice-deai": {
+      "file_count": 3,
+      "files": {
+        "duo_社媒通用声纹-skill.md": "3d2881c7e3e6cb2290ac76a9c80ab295fb59cd905acbd3840c482c053d86a948",
+        "SKILL.md": "61e72a2752cdee745ede569df8ed8cf1c9a89ebdd37eafe5624ccaf1014fe1f6",
+        "references/duoduo_voice_dna.md": "56563316f1382249bbd3f00ef622efb86c909a8dbee8999d1b57f0af6d181667"
+      }
+    },
+    "duoduo-wechat-chat-export": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "e32a71fc803a6c43e680237a1eb7d208f7db9ac21ac38595e20b605865e75a8b"
+      }
+    },
+    "duoduo-wechat-publish": {
+      "file_count": 5,
+      "files": {
+        "SKILL.md": "839ca1f6107d8624819d7c0186f3384f5a6a100f85845158d9dd64bfa0e2389d",
+        "templates/A_长卷叙事_1080.html": "736b92f34b20be252c99fecef571542f5437fb80f11c0452c359ed81f46c857f",
+        "templates/B_刊物杂志_1080.html": "adfb94721b720d7b91a514e959a78705280f3c4482f710daaa84d3851b40524c",
+        "templates/C_暗夜海面_1080.html": "1b2b453f89054e5f092a74305c0e1afb531ea380af452a1496d92a08551e95ee",
+        "templates/正式稿_半离职状态_1080.html": "53285c87308086a755f959c7d5bb9596b0deca615e615a2a041b25925c448219"
+      }
+    },
+    "duoduo-weekly-review-calendar": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "2363c6ddd10667adef07b0ffe66af12a33e99a03b4c7fd14a6af42f822f3fe98"
+      }
+    },
+    "duoduo-weread-digest": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "04773e680177dc7ec80274fbb00d57ed55175707183b1c9bb8120fc8ea8d6e20"
+      }
+    },
+    "duoduo-xhs-weekly-digest": {
+      "file_count": 1,
+      "files": {
+        "SKILL.md": "c327f1c9a60e8d569f8bc819850207471566050c5b595d41a229b899591690c1"
+      }
+    },
+    "qu-ai-wei": {
+      "file_count": 89,
+      "files": {
+        "WARP.md": "1899f83ed0a99afdd4c1882a67dafc0ffba4cc3740b0e06aa6a07b984e49a357",
+        "LICENSE": "38afb5701ea731548bf4ec5e9f550e0150cfa5257071114eac0de1ee0902a5ef",
+        "CHANGELOG.md": "5089bae745db856171a5a269012280e8aa42ca255bc1960cd09b4122ad9c8c3e",
+        ".cursorrules": "0df1f5fdb941873d5847f00211ded3322c48b7efed71ad7486182da6238bf09a",
+        "README.md": "764a29bd7a1af1683c0265679adbd7d7dfeb38e0dd4727e788418d6c986bdc5c",
+        "update.sh": "3591c5f000abb6e2bc8cfe261f1029b12e1e1cc1d15c4f6a84210bfdb4180d68",
+        ".gitignore": "7ba280ad44b7d958a296f3c1530533de91ba6af3df4e6564e2a6f9ebee9b6f8d",
+        "SKILL.md": "28ccdd2792a456168e7872f6d9d1186982680128240b38516bf83c84ea272beb",
+        "AGENTS.md": "4c0b9caeee796dc67664d32bbec97d23ae2cf5dfab5cea711e14222371511509",
+        "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+        "references/reference-models.md": "7fe4dd11ba0be79c1220f243f39924b7093f2bfa0b368403ce8c1203e9c5dfee",
+        "references/examples.md": "e3e2f3ac42b6f8419c24abeeb333faf9417503f19d6d719c273f1d9c2a818b39",
+        "references/syntax.md": "262c60f4d913156172d99ca0f36ecc5db8f5311f807fcb0f49c62e178f13dbd5",
+        "references/sources.md": "ffad04b402e32e00ea983d4a6c4e2de8e4ac6356878be15b0a435d38d1053166",
+        "references/platform-patterns.md": "89895dd905875faf8ad1c4409ba5dc46fb720842e2ec23868e7752e69e447d65",
+        "references/patterns.md": "79a03369370d50219272c97cd51b196ec4befb2479c8c16ce9db89be7febb931",
+        "references/whitelists.md": "75b7a94cf6d98538017f6492e446a16dbdad7dce1394681b54e4cfaf9026bed5",
+        "references/brand-voice.md": "70f85086589db6db43ac3b9792d1526ba182d3b6e5f7aa750d103a6ca6a831f1",
+        "references/punctuation.md": "b20be77d98a87a2f89cf2ae54e6c1a395b495238b2fa009a44613d5300be2107",
+        "tests/eval-manifest.txt": "1669d0ddf8857e99b2bb765518e50be6e55e6f3becc1591bb0e3c0471347cebe",
+        "tests/check-version-sync.sh": "9a99e9153010a2d52de26f400587b218122fb2969736a1b7506ae8b5057537c9",
+        "tests/check-skills-cli-discovery.sh": "711ad2b682f2cacf1740436e7b7657df44a9746fd3b6341cdf032c4ac5c52795",
+        "tests/check-runs.sh": "5131c9c03873de4b6ee0a7d43fa440d6750757b89256559767ee92560aa5fd42",
+        "tests/check-flat-sync.sh": "454a214a29d6b37c3369dfc12a6a72c4214f04b731e915ff12978db79f1aacb0",
+        "tests/README.md": "1b8662971cbffc199210ab5b470cb72e299a95e1c6ed38bbb6e2500f4d17b2ca",
+        "tests/trigger-manifest.txt": "eb4a8f406f672f262f5524344167df0f534e19b75374924f51b73973811735bf",
+        "tests/check-triggers.sh": "89f788b59980e15831037dc642554748103a74b8a14a79a75801193cd73ea561",
+        "tests/check-snapshot-smoke.sh": "e5c2d3b16175fafca7947d60f299209bbe2bc92b99527dea5ce78228c2090049",
+        "tests/baseline/01-output.md": "ef37a5ecef74289f49fe4bb5a6ee27bd17a132d4cd8dda407f95b771d5213498",
+        "tests/baseline/03-output.md": "acfe4900ead3b3303edb57f4fcada9b83ae708b4141675616dd5c9219c679d44",
+        "tests/baseline/02-output.md": "577f0efa5f3c2856023aa235403f35c090ffc433094100d39d720e17b4bd6f15",
+        "tests/fixtures/17-xhs-home.md": "d26ed28f5aa50d98966dc5614724b40f5c674e0f370c7c042cf44b9ab02357e0",
+        "tests/fixtures/02-gongzhonghao-weishendu.md": "95823c3e7c10ec3b02404046408d1d621a67e963ad379caaf2587df0001b33dd",
+        "tests/fixtures/corpus-queries.txt": "12d3e1870fe85a4273d2d4653f22bc0d2cc8aae81a07d150fec8f91ab3a517a7",
+        "tests/fixtures/06-brand-voice.md": "59e9579550ce9381877c15eff64cef77cc99dd5c642210b2fc56dacdeefc6f6a",
+        "tests/fixtures/05-human-stop.md": "7b734b33b41c8982ef4da1aabfb90beeb0abd1cacd69e1b791c22f634a9f51b8",
+        "tests/fixtures/15-xhs-office-tips.md": "8596d18b8f5835c1c4b7e7046bca0fbd6e68c380f62830675d3a3a83361806ba",
+        "tests/fixtures/13-xhs-classic-templates.md": "a2daeb962f2acd96de46d5ae88db8e8a81dcb395243b45f0a04292f92202f199",
+        "tests/fixtures/18-fake-candor-aphorism.md": "fd8d93cff5572dea4dfba8c9075106c891b1bb73f1f280c47218a2e1c55cdaaf",
+        "tests/fixtures/09-xhs-healing.md": "37b4cc846e91853c17c46bf825b24df79b43e5a7bcc5aabbf27734818fec28db",
+        "tests/fixtures/corpus-queries-batch-2a-language-hf.txt": "1ebbecf7929593360f64b2a91b813356d2a08d9ba6005843a0b9607f13bb2b62",
+        "tests/fixtures/12-table-abuse.md": "9cbde3ccb1f6621594f914587c40025404f47a8339cf2e872cb1e4ef4fb6f6a0",
+        "tests/fixtures/corpus-queries-batch-1-content.txt": "03dc0a5b2b6f321ebc270064ef39f7bfc5e7d84dd34d269228c7c63ee1467f82",
+        "tests/fixtures/01-ai-zh-overview.md": "c0aedd6131751458faf5a0f9491d0620d9da6f96625780fd778ffc400aaadcdd",
+        "tests/fixtures/08-weishendu-consulting.md": "6299c7ad7dab5e22dc5b563627e42b76ac69e8224870eeded9c2197fbbf4bb2b",
+        "tests/fixtures/11-negation-stacking.md": "451d646e71a9b4e082c8c6f578df10db848c4fd1b54a452352f71265f7c25a4a",
+        "tests/fixtures/03-xhs-kimi-anli.md": "7e041b55dca89911113a84397ba82a993561af9bf6f38d25f860cd8c7396fe91",
+        "tests/fixtures/10-bilibili-script.md": "78b6cf569d98cf37e05b39243f8225426f0ff91f34d50acac15be2e4e4b6f948",
+        "tests/fixtures/04-negative-pairings.md": "dff3ade8df43b2c863b38068aa6ac6bc8f198eb2ef3e80896d484e37015e1d56",
+        "tests/fixtures/14-xhs-ootd.md": "86f2c1caaba010656de22d53ee8f9731b8de4d0292f0a70c0f331490e3028c27",
+        "tests/fixtures/corpus-queries-batch-4-fillers-translation.txt": "81ee05d1702dda151275f82338655a262362e6797d58841ffd0c30c4b5bd0d91",
+        "tests/fixtures/corpus-queries-clean.txt": "7666a1178426950fe5066be6ccf78adfb1a0feba4e9cdea441a40390f917c704",
+        "tests/fixtures/corpus-queries-batch-2b-language-rest.txt": "a926081c02888195ce6f1ff448d0e666fcfe24da2df6086337cd0198f8ae74e9",
+        "tests/fixtures/corpus-queries-batch-5-platform.txt": "8807c9d4bc1f2a4a416ab2d07bb1b44fbfde60f151b418445867959731721ae4",
+        "tests/fixtures/16-xhs-skincare.md": "dd65217b2f9512355dfc3608f3dfdfae8d563bbf3f9d9f4a8393bb6ba9eacc23",
+        "tests/fixtures/corpus-queries-batch-3-rhetoric-dialogue.txt": "89ea0cf78542f00e2080e4052b1db72eb1e7131f638bc5be35566eed324b1ef6",
+        "tests/fixtures/07-academic-tech.md": "d06515876acb299ebc9d85a5c103790bbf8b96eef2ec0cd50343a65d7206529d",
+        "tests/fixtures/corpus-queries-batch-6-popwords-whitelist.txt": "e3d412b1984618cab4cf2b02b3fc368f839a62cd076f3b368d5f0a4335ff4e96",
+        "tests/after/18-output.md": "c3cc1327078bff811cb5111e953a591d4f22d00eb7032ae03e92df10a264783f",
+        "tests/after/01-output.md": "f95ea2f5c347a4c36f6e07c6b5d0a1438e68077bda375b5525293eec690e4e92",
+        "tests/after/15-output.md": "868ef67e8cb17d655f7f6e52ec94280b8bed7741f72abe0580ea4bedc8022dd1",
+        "tests/after/07-output.md": "155de5e2917ce0a91bd6d4a27c58334be08114808d12c5ebfb03061bf8056f29",
+        "tests/after/13-output.md": "143b873bafc4fd3ee225096b22522034ebc8333659e8aa224fe43dd00a3cf68d",
+        "tests/after/14-output.md": "e160530fa62f357b031cc0fa6dfde9466b9a101e8e64513c0e719e9dcfc3d3d7",
+        "tests/after/12-output.md": "13b3d523ffccc2bf714834d5d8349dbc7367bad6bd5b5bc2342c85b7cc113e4d",
+        "tests/after/06-output.md": "ce533dbfb615b890b9ea98547ada4dc3986af3756a64878e2c9160ae9f1d9884",
+        "tests/after/03-output.md": "af57d304ef4441a3d301033a3b57c38d925b7791d8ad2b13e384207c79d3f1b0",
+        "tests/after/17-output.md": "855dcb27727c81906907ecb529225d2a7ccd5f8920adb0c2ef777ee417fff93e",
+        "tests/after/08-output.md": "7c7051b3d6a4481015c4168c240384f41e67a6d46a40cdd57528ec42cafaa040",
+        "tests/after/05-output.md": "ac7fe9cda6da9acbbc1af4c8ed44281e76ea4c3daaf1037f643b9f1e9a411b1d",
+        "tests/after/11-output.md": "8a398b7e5d92f9646d466645efe55c637c8604d8ea098be5a08e15893f61fb95",
+        "tests/after/01-output-rerun.md": "aca1b2e0082d7ec54223a2f5d911bd9791f0dbc08bdbc38378a532379538713f",
+        "tests/after/16-output.md": "1a04d861bca346bb7f7ac2a228a08509b46b97e86da8741f697f30a3b71bc54e",
+        "tests/after/02-output.md": "abf052bfa37bd6cd9d0563fe5c619fa23ad9bfdbffd2607da543449c7fedb5cd",
+        "tests/after/09-output.md": "d1f82ba3cbea0e7a73efde18bb999225a13ea44cc0b5d284c0a4836de5d33c4d",
+        "tests/after/10-output.md": "b8f3bd76b8858d5cb0a4b9d4013a17531e7676e104444f19d9eef3f93ff6ca23",
+        "tests/after/04-output.md": "e49f760f75dcb7401754e8e794166af437dcd7ff74d88ece3d67a8529b8d026b",
+        "tests/runs/README.md": "f1dd555ecee1b69482765b1e59839d795e3f93319610d677c45d8a257a2f1563",
+        "docs/agentskills-review.md": "c5503c970e1ac8d4d63529b9db307f9cc3e3ed7a2664ffcaba075e5b5d5bce48",
+        "scripts/install-skill.sh": "665a00041ea2a11a0e2b41b5b62e8a54c8b1324be128be020f3a73892ee59ac3",
+        "scripts/build-flat.sh": "b9b39d15c9ce894a8955abec0ac71bbfbe41afebf2cfa5abb92fe97b2d7b5473",
+        ".github/workflows/release.yml": "3da64e6f2a6050f4af67fdc637a03dca785423696b010c635946c1fd00abdce3",
+        ".github/DISCUSSION_TEMPLATE/show-and-tell.yml": "75ec9e5f91dc0bf70feef035262d3f8baf55dc0bd306e26dcc3b9bee07edb81e",
+        ".github/ISSUE_TEMPLATE/pattern_suggestion.yml": "b78302b0b5a68db6394150f1ff738138990f9465b75db24f5b98e4e75ec935b6",
+        ".github/ISSUE_TEMPLATE/bug_report.yml": "709afd362ec860abbddf43af79fce5be4456dc1335c58cfaaf9e255830ea533d",
+        "readmes/README.en.md": "048ea468c2b8edc211912aae1b856e5f5328680299149aff985c941bca94ac47",
+        "readmes/README.es.md": "5782dbb42714b3e0fb099ce1d6a96e91a1b9203b3ce8ec9e04b04f02c4a93029",
+        "readmes/README.ja.md": "66b7ebe37ef443c34d86d158f268ce32c527cfdba8ddac2dcedff2b7052ff141",
+        "readmes/README.ko.md": "ed12f4def2475f4e94514565f92675b71d7254fec8762135429900d1d4dbfe0f"
+      }
+    },
+    "shifei-video-edit": {
+      "file_count": 8,
+      "files": {
+        "SKILL.md": "91701459ab09746d8956118d6157e300ee39a8b97e2cad1f26b72373e1961242",
+        "references/oday-horizontal-recipe.md": "22006113aeb07aa5cf73bc0f30aeff1c5ac15f82fbb4bb188da42a6f7231804a",
+        "references/editorial-system.md": "2e22626d8c39b9e141746e86acd7286e8251b35714bc7c042f5ebf53ab60b132",
+        "references/people-interview.md": "cfb8cd5a7a720fe6fd1fdd637a8e73d6d0b315b8da332309f2a2025f0e98ee85",
+        "references/field-notes.md": "b68358c11137751e35397c83bde0c9a3118ab8a28a34a004a8ea5f443f31d100",
+        "references/production-qa.md": "bacab0ec7432eb184470e90ca8565f8437214c017bbe8ed8c398138fe1c1672a",
+        "agents/openai.yaml": "d920209c43aec78317bd48734bad1ec9b0e67778d68b2868e9491b8633dbd902",
+        "scripts/verify_delivery.sh": "e88d57c2c0e8890509480882000b9f28d44a71fabd07efde0c64d640047f0852"
+      }
+    },
+    "visual-understanding-toolkit": {
+      "file_count": 3,
+      "files": {
+        "SKILL.md": "c45927f9b85727f75ba3a0569db271737566be17b30ba2d0fe6ed99e270f3ee2",
+        "references/read_image_prompt.md": "e687a30ac9e53dd978ab601860fa7aabc3c00d69628685b7ef69d9e2e2f66c1d",
+        "references/ollama_local_read.py": "65a557a638dcb1aa5a391722ef01192ecde95599a3520eb29a7e6e792d478e34"
+      }
+    }
   }
- }
 }

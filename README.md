@@ -3,7 +3,7 @@
 多多个人公司 WorkBuddy 技能库 · 多设备共享源。
 
 ## 是什么
-- `skills/` 下 23 个技能 = 多多所有自建 workflow skill 的**唯一权威版本**。
+- `skills/` 下 24 个技能 = 多多所有自建 workflow skill 的**唯一权威版本**。
 - Mac / Windows 任何设备的 WorkBuddy 都从这里安装或更新技能，不再依赖 Obsidian vault 镜像。
 - `catalog.md` = 人读总览；`skills-manifest.json` = 机读清单（每文件 sha256，供比对同步）。
 
@@ -26,7 +26,7 @@ Copy-Item -Recurse -Force $env:TEMP\duoduo-skills\skills\* $env:USERPROFILE\.wor
 | ⚠️ 需改路径 | 技能内含 Mac 绝对路径，装到 Windows 后按本机路径调整 |
 | ❌ Mac 专属 | 依赖 Mac 本机环境（微信客户端 / CalDAV venv / capcut-cli 等），别在其他设备跑 |
 
-❌ Mac 专属：`duoduo-wechat-publish`、`duoduo-wechat-chat-export`、`duoduo-caldav-calendar-write`、`duoduo-video-edit`、`duoduo-diary-to-calendar-pipeline`
+❌ Mac 专属：`duoduo-wechat-publish`、`duoduo-wechat-chat-export`、`duoduo-caldav-calendar-write`、`duoduo-video-edit`、`shifei-video-edit`、`duoduo-diary-to-calendar-pipeline`
 ⚠️ 需改路径：`duoduo-company-daily-os`、`duoduo-company-night-patrol`、`duoduo-expert-hourly-patrol`、`duoduo-approval-detect-and-release`、`duoduo-weekly-review-calendar`、`duoduo-podcast-sync`、`duoduo-podcast-build`
 ✅ 其余均为跨平台（写作 / 设计 / 方法论类）。
 

@@ -1,6 +1,6 @@
 # duoduo-skills 技能库总览
 
-> 更新：2026-07-29 · 共 23 个技能 · 权威源：Mac `~/.workbuddy/skills/`
+> 更新：2026-08-11 · 共 24 个技能 · 权威源：Mac `~/.workbuddy/skills/`
 
 ## daily-diary-skill
 - 文件数：2
@@ -96,3 +96,7 @@
 ## duo-podcast-workbuddy
 - 文件数：1
 - 用途：WorkBuddy 平台播客生产权威标准（EP11 v4b 验证）。生成/修复/混音/质检多多中文双声线 AI 播客：克隆多多声线（A）、固定男声 co-host（CustomVoice voice="dylan"）、插入片头片尾/SFX、诊断定点音频缺陷、导出可发布 MP3。与 codex 的 duo-podcast 是独立分支（男声 dylan / A 清脆 / 禁用 time_stretch 与 temp0），不可互套参数。
+
+## shifei-video-edit
+- 文件数：8
+- 用途：剪辑多多的世斐（Shifei）非虚构旅行、人物、现场事件与 Sri Lanka Field Notes 视频。用于人物采访、旅行档案、对谈、现场事件、旁白+B-roll、字幕校对、声音修复、调色、概念卡、封面和交付；当用户要求"世斐""这个人让我看懂了这里""People of Sri Lanka""Field Notes"或复刻世斐人物对谈时必须使用。

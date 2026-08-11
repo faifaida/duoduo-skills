@@ -1,0 +1,4 @@
+interface:
+  display_name: "世斐视频剪辑"
+  short_description: "将真实人物现场剪成世斐旅行叙事片的完整可复用执行规范"
+  default_prompt: "用世斐视频剪辑规范，把这批素材剪成一条真实人物故事。"
