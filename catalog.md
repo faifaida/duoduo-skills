@@ -1,6 +1,6 @@
 # DUODUO Skills Catalog
 
-> 共 19 个技能（合并整理后，含从 workbuddy-skills 并入的 2 个）。生成于 2026-08-12T01:30:00 UTC。
+> 共 18 个技能（design-system 已移出，改为独立仓 faifaida/duoduo-design-system 为唯一真源）。生成于 2026-08-12T01:40:00 UTC。
 
 ## 合并型技能（consolidated）
 
@@ -38,10 +38,6 @@
 
 ### duoduo-approval-detect-and-release
 - 文件数: 1
-- 说明: 
-
-### duoduo-design-system
-- 文件数: 15
 - 说明: 
 
 ### duoduo-github-sync

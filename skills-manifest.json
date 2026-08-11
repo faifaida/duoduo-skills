@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-11T17:26:35",
+  "generated": "2026-08-11T17:39:45",
   "repo": "faifaida/duoduo-skills",
   "skills": {
     "duo-company": {
@@ -292,26 +292,6 @@
       "file_count": 1,
       "files": {
         "duoduo-approval-detect-and-release/SKILL.md": "3099f6fbd66011f3dd0a696243107c65e4cdd161da5dec1e0b851634f97a866b"
-      }
-    },
-    "duoduo-design-system": {
-      "file_count": 15,
-      "files": {
-        "duoduo-design-system/CHANGELOG.md": "3e008b05a4bc3331ebf859ba1a140a783d6d5c0c69acf97372a0ddcbdb2fd9b8",
-        "duoduo-design-system/SKILL.md": "d49d2bb77300ab94b4f341f3e3a183929acb5e14b4fe0b4a8bb4ba03bd611f48",
-        "duoduo-design-system/assets/motifs.svg": "06683b1c4d2f745c1ceb5e9011d70b3d74a7bd0aa1a3b0a1a835a6a65920617c",
-        "duoduo-design-system/assets/template-brand.html": "94cbe7fa193cc88e8c15acebb3e0632b0a2e3766754207e474119fd622d73a46",
-        "duoduo-design-system/assets/template-cards.html": "3d0621f4ba502766f6d122bc9cd4e911c0033b9078a8d78719810e17f4380bac",
-        "duoduo-design-system/assets/template-landing.html": "2b5330814d0b01cdf117a4e93e0073a1cef6f6e6d54e0ac2a5ee42620374a1d8",
-        "duoduo-design-system/brand-dna.md": "7f56372f797d1fc74e2be84181372142b793e737ee099d31b70a49eb6be040e5",
-        "duoduo-design-system/references/checklist.md": "47bbe8065c55807cfde8b292e7da99619a9abea01e83a87d06debeffabb5fbd6",
-        "duoduo-design-system/references/components.md": "01e881b9388fa09b491fd8cf068ac7760d4c698d8dc75395977f91999cbf2e46",
-        "duoduo-design-system/references/layouts.md": "4577d3e1fdaad5b3b6668a053ed3f821cdc18cbafbf1a48bf9c9e1b98fe34105",
-        "duoduo-design-system/references/scene-app.md": "bacba2c8cb4d6b70f49670371cc6d620dca90a611712574128f99ed78d68a503",
-        "duoduo-design-system/references/scene-cards.md": "4ce25bb1a8d33dd0124b4f1a68382c97acf651448d9eff7b056d6a42e5cc7f7a",
-        "duoduo-design-system/references/scene-landing.md": "e90025fbff6469972ba43181f9b3a74bba73ed2bcabff97a89e084e62c9b34b1",
-        "duoduo-design-system/references/scene-tutorial.md": "1c6bc597f0ac416d884f973da27b2bb85d7a662485063aaccdbfc4d8b5f05ea2",
-        "duoduo-design-system/references/scene-wechat.md": "6a338431085fa0521da5ae263a58b4b5091c2b42b873fce4eeff559d26dcf3e4"
       }
     },
     "duoduo-github-sync": {
