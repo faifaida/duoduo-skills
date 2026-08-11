@@ -1,0 +1,17 @@
+name: "✨ 新技能 / 新功能"
+description: 提议一个新技能或某技能的新能力
+title: "[feat] <技能名 / 想法>: <一句话>"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: 想法描述
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: 解决什么问题 / 价值
+    validations:
+      required: true

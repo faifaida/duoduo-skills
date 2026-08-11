@@ -1,0 +1,34 @@
+name: "🔧 改现有技能"
+description: 修改 / 修复 / 增强某个已存在的技能
+title: "[skill] <技能名>: <一句话改动>"
+labels: ["skill-change"]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: 技能名（文件夹名）
+      placeholder: duoduo-video-edit
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: 改动类型（决定发版 bump 哪种版本）
+      options:
+        - feat（新能力 → minor）
+        - fix（修 bug → patch）
+        - docs（文档 → patch）
+        - refactor（重构 → patch）
+        - perf（性能 → patch）
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 改了什么
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么改 / 背景

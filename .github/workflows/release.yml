@@ -1,0 +1,20 @@
+name: release-please
+
+# 合并到 main 后，release-please 自动开「发版 PR」；该 PR 合并即生成
+# vX.Y.Z tag + GitHub Release（release notes 自动汇总当次关掉的 issues / 合进的 PR）。
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        with:
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
