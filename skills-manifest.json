@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-11T17:21:11",
+  "generated": "2026-08-11T17:26:35",
   "repo": "faifaida/duoduo-skills",
   "skills": {
     "duo-company": {
@@ -143,6 +143,12 @@
         "duo-podcast-studio/references/02-podcast-sync/scripts/state/uploaded_episodes.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
         "duo-podcast-studio/references/02-podcast-sync/scripts/xiaoyuzhou.py": "3cd274a3a436550fc0572c5f43f978d88d58fdd76fcd1ddb03a5dafc44059155",
         "duo-podcast-studio/references/02-podcast-sync/scripts/ximalaya_sync.py": "1d224878ecb76f8519a4b81edc4f6cea77e5713c54e1c803e37e86ff9027ef7a"
+      }
+    },
+    "duo-video-script": {
+      "file_count": 1,
+      "files": {
+        "duo-video-script/SKILL.md": "cea516127166280807754039f21d9ce4e476ddd947b160add25534f74b1ef356"
       }
     },
     "duo-voice-deai": {
@@ -337,6 +343,20 @@
         "duoduo-video-edit/scripts/cover_photo_registry.json": "64c808a70265b7c9722ce83a6403de75888349f5d6e4bf07567c039103c44aeb",
         "duoduo-video-edit/scripts/face_id.py": "9cf1592823b3306a4054ea3942297c80b748ebbb5055473599a2ada922fcb1ec",
         "duoduo-video-edit/scripts/make_cover.py": "15319cf163674d2cfdb843c522790571449cec228411a3889ea5684dcdddff12"
+      }
+    },
+    "duoduowear-illustrations": {
+      "file_count": 9,
+      "files": {
+        "duoduowear-illustrations/SKILL.md": "186f439bd5776bff6988e93fe9d2b10b275e52031f1d64a2ed6d341ceebb01a2",
+        "duoduowear-illustrations/assets/examples/compose_wear_excalidraw_validation.py": "23512b99164635a1fe67fdaf6991b780e0ab5e7a4b553e8d1c9118bc7e10c746",
+        "duoduowear-illustrations/assets/examples/compose_wear_season_graph_v7.py": "689715aa4a4d2b95dbd07ea9f2c962d41f2c57e77eb6e627d0aa8cba63a65f06",
+        "duoduowear-illustrations/assets/examples/wear_excalidraw_validation.excalidraw": "75d1c5e39948572335a878ff2291ca79a82f3f6c035b6a341fc701297feb4b82",
+        "duoduowear-illustrations/assets/examples/wear_excalidraw_validation.png": "07c2dd734e451b2232b8d42dca1954b5e96d061da12529108a4db5bdcab39968",
+        "duoduowear-illustrations/assets/examples/wear_excalidraw_validation_preview.html": "667df6073e4f43a6f8e671b22d80a6e65960f5035e9ac97fd64d40a457cbaac3",
+        "duoduowear-illustrations/assets/examples/wear_season_graph_birds_v7.png": "1d502241ae52550a0d8303f47c047547b3981f4f1dcd6d352ab10c2c68fefda8",
+        "duoduowear-illustrations/assets/examples/wear_season_graph_birds_v7_preview.html": "0c9546faaa108eb9798b5a0259b9d87901b2bcae52161efc72eeaca31fc668fe",
+        "duoduowear-illustrations/assets/reference/approved-character-shell-scene.png": "b9834cc8820213305455ce5589cad14d9881c8c46143ebd917b870b23a9ec8ff"
       }
     },
     "ffmpeg-libass-drift-drawtext": {

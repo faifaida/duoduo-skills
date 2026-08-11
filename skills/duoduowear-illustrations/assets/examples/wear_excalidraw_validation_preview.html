@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEAR · Excalidraw × Shell Bird IP 验证图</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #E6CEB8;
+    color: #2E27A8;
+    font-family: "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  .wrap {
+    max-width: 720px;
+    width: 100%;
+    background: #E6CEB8;
+  }
+  h1 { font-size: 1.8rem; margin: 0 0 0.3em; letter-spacing: 0.05em; }
+  .subtitle { font-size: 0.95rem; opacity: 0.85; margin-bottom: 24px; }
+  img {
+    width: 100%;
+    display: block;
+    border: 1px solid rgba(46,39,168,0.18);
+    border-radius: 8px;
+  }
+  .meta {
+    margin-top: 22px;
+    padding: 18px;
+    border: 1px solid rgba(46,39,168,0.25);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.12);
+  }
+  .meta h2 { font-size: 1.1rem; margin: 0 0 0.6em; }
+  .meta ul { margin: 0; padding-left: 1.2em; line-height: 1.8; }
+  .meta code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: rgba(46,39,168,0.08); padding: 1px 5px; border-radius: 3px; }
+  .cta {
+    margin-top: 18px;
+    display: inline-flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a.button {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1.5px solid #2E27A8;
+    border-radius: 6px;
+    color: #2E27A8;
+    text-decoration: none;
+    font-size: 0.92rem;
+    transition: background .15s;
+  }
+  a.button:hover { background: rgba(46,39,168,0.08); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>WEAR · Excalidraw × Shell Bird IP 验证</h1>
+    <div class="subtitle">把 Excalidraw 手绘骨架与品牌鸟图腾合成，验证「手绘结构 + IP cutout + 程序合成」流程。</div>
+    <img src="wear_excalidraw_validation.png" alt="WEAR 四季图解 Excalidraw 验证图">
+    <div class="meta">
+      <h2>交付文件</h2>
+      <ul>
+        <li><code>wear_excalidraw_validation.png</code>：最终合成成品（1080×1440，#E6CEB8 + #2E27A8）。</li>
+        <li><code>wear_excalidraw_validation.excalidraw</code>：可编辑手绘骨架源文件（框 + 箭头 + 文字，<strong>不含鸟 IP</strong>，鸟由图片模型生成后程序合成）。</li>
+        <li>脚本：<code>scripts/compose_wear_excalidraw_validation.py</code>。</li>
+      </ul>
+      <h2 style="margin-top:1em">纪律检查</h2>
+      <ul>
+        <li>结构/流程：PIL 手绘 rough 风格骨架（模拟 Excalidraw）。</li>
+        <li>鸟 IP：v7 已拍板的 Shell Bird 图腾，2 色 cutout。</li>
+        <li>文字 / Logo / 色带：程序添加，非图片模型生成。</li>
+        <li>配色：背景 #E6CEB8，鸟形/文字 #2E27A8，无第三色。</li>
+      </ul>
+      <div class="cta">
+        <a class="button" href="wear_excalidraw_validation.png" download>下载 PNG</a>
+        <a class="button" href="wear_excalidraw_validation.excalidraw" download>下载 .excalidraw 源</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

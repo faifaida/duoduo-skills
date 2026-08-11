@@ -1,6 +1,6 @@
 # DUODUO Skills Catalog
 
-> 共 17 个技能（合并整理后）。生成于 2026-08-12T01:00:00 UTC。
+> 共 19 个技能（合并整理后，含从 workbuddy-skills 并入的 2 个）。生成于 2026-08-12T01:30:00 UTC。
 
 ## 合并型技能（consolidated）
 
@@ -23,6 +23,10 @@
 ### duo-voice-deai
 - 文件数: 95
 - 说明: 多多对外文案去 AI 味 + 原声重写总入口：覆盖所有平台公开发文与口播稿，并扩展接入简体中文专用去 AI 痕迹（qu-ai-wei）。 本 skill 由多个相关子能力合并而成，触发时按下方索引表加载对应子模块，避免一次性载入全部内容。
+
+### duo-video-script
+- 文件数: 1
+- 说明: （从 workbuddy-skills 并入）视频脚本生成技能。
 
 ### duo-wear-painting
 - 文件数: 6
@@ -51,6 +55,10 @@
 ### duoduo-video-edit
 - 文件数: 12
 - 说明: 
+
+### duoduowear-illustrations
+- 文件数: 9
+- 说明: （从 workbuddy-skills 并入）DUODUO WEAR 品牌插画/素材生成技能。
 
 ### ffmpeg-libass-drift-drawtext
 - 文件数: 1
