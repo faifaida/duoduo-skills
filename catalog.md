@@ -1,12 +1,8 @@
 # DUODUO Skills Catalog
 
-> 共 18 个技能（合并整理后）。生成于 2026-08-11T17:00:33 UTC。
+> 共 17 个技能（合并整理后）。生成于 2026-08-12T01:00:00 UTC。
 
 ## 合并型技能（consolidated）
-
-### daily-diary-skill
-- 文件数: 2
-- 说明: 
 
 ### duo-company
 - 文件数: 5
