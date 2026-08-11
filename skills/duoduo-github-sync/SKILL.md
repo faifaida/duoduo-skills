@@ -17,9 +17,15 @@ agent_created: true
 - 本环境 GitHub MCP 连接器 = `connector:github` → `https://api.githubcopilot.com/mcp/`。它**没有**改可见性的工具，只有 `push_files` 推内容。
 
 ## 1. 同步范围（白名单，只推这些）
-1. `~/.workbuddy/skills/duoduo-*/**`（每个技能的 SKILL.md + 辅助 md / 参考文件 / 素材）→ 仓库 `skills/<skill-name>/`
-2. 本技能目录下的 `catalog.md`（人读总览）+ `skills-manifest.json`（机读清单，含每文件 sha256）→ 仓库根
-3. **绝不推**任何凭证 / 配置：`caldav_config.json`、token、密码、`mcp.json`、`.credentials.*`、日记、公司档案其余文件、微信导出。推送前 Grep `password|secret|token|专用密码|app-specific` 扫一遍，命中即剔除并报告。
+1. `~/.workbuddy/skills/duoduo-*/**` + `qu-ai-wei` → 仓库 `skills/<skill-name>/`（排除 `.git`/`__pycache__`/`node_modules`/`.DS_Store`/`*.pyc`；⚠️ qu-ai-wei 自带嵌套 `.git`，必须先删掉其 `.git` 再 add，否则推上去是空 gitlink）
+2. vault 独有技能（本机 skills 目录没有的）：`99_Systems/00_Workflows/` 下的 `duoduo-podcast-sync`、`daily-diary-skill`、`duo_longpic-gen` → 同样进 `skills/`
+3. 仓库根：`README.md`（多设备安装命令 + 平台适用性 ✅/⚠️/❌ 标注）+ `catalog.md`（人读总览）+ `skills-manifest.json`（机读清单，每文件 sha256）
+4. **绝不推**任何凭证 / 配置：`caldav_config.json`、token、密码、`mcp.json`、`.credentials.*`、日记、公司档案其余文件、微信导出。推送前 Grep `password|secret|token|专用密码|app-specific` 扫一遍，命中先人工判断是真密钥还是文字引用；真密钥剔除并报告。
+
+## 1.5 本地暂存仓 + 实时同步铁律（2026-07-29 起）
+- 暂存仓：`~/.workbuddy/duoduo-skills-repo/`（git，branch main）。同步动作 = rsync 重刷 `skills/` → 重算 catalog/manifest（脚本见 §3）→ `git add -A && commit -m "sync: <日期>"` → push。
+- **实时同步铁律（多多 2026-07-29 要求）**：任何会话修改了白名单技能（新建/编辑/删除），**同一会话内**必须同步暂存仓并 push GitHub。
+- vault `99_Systems/00_Workflows/` 镜像自 2026-07-29 起**废弃**，不再维护（多多要求 Obsidian 不再存技能）；GitHub 是唯一分发源。
 
 ## 2. 写入路径（两条，按可用性选）
 **A. GitHub MCP 连接器（优先）**

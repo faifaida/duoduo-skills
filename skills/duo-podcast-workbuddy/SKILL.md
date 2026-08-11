@@ -33,8 +33,8 @@ description: Produce, repair, mix, and quality-check DUODUO's Chinese AI-assiste
 ## 2. 🚨 Pitfalls & bans (local measured, highest priority)
 
 1. **`speed` is a dead parameter:** mlx_audio official "not supported yet". 0.8 / 0.9 / 1.04 all no-op; A is always default pace. **Do NOT substitute librosa `time_stretch` for slowing** → Pitfall 5.
-2. **Female swallow root cause = long-generation random tail-drop:** a single render turn >~40 chars / >~12s, the model randomly drops whole tail words (seg21 "解释" dropped entirely). Unrelated to fade/temp. **Cure = `_split_long` in `render_segments.py`** splitting at `。！？\n` (MAX_CHARS=40, A only) + `UNIT_PAUSE=0.2`. Proof: `temperature=0` full-turn render STILL drops "解释", so splitting — not temp — is the fix.
-3. **💥 Metal deadlock (fatal):** killed/timeout/ollana-occupied → `RuntimeError: Unable to load kernel`, unrecoverable within session. **Only fix = reboot Mac.** Avoid: background ≥3min, `kill -9 llama-server` before render; **never delete wavs to re-render** (source-segment loss = dead end). Reboot clears `/tmp` → rebuild ref (extract only, no denoise).
+2. **Female swallow root cause = long-generation random tail-drop:** any single render turn beyond ~22 chars, Qwen3-TTS randomly drops the final 1–2 chars (EP12/13 user-audited: MANY sentence-final chars vanished). Unrelated to fade/temp. **Cure = `_split_long` in `render_segments.py`** — split at `。！？\n` AND **hard-split any single chunk >MAX_CHARS=22 chars** (the original only split at punctuation, leaving long punctuation-less sentences whole → STILL swallowed). A only + `UNIT_PAUSE=0.2`. Proof: `temperature=0` full-turn render STILL drops tails, so splitting — not temp — is the fix. **MAX_CHARS=40 is NOT enough** (EP12/13 proved it); use 22.
+3. **💥 Metal deadlock (fatal):** killed/timeout/ollana-occupied → `RuntimeError: Unable to load kernel`, unrecoverable within session. **Only fix = reboot Mac.** Avoid: background ≥3min, `kill -9 llama-server` before render. Reboot clears `/tmp` → rebuild ref (extract only, no denoise). **Deleting A wavs to force re-render is the standard method (SOP §4) — safe ONLY if the TTS script is intact** (segments regenerate from it); if render then hits Metal deadlock, reboot + re-render from script. Never delete wavs when you cannot re-render (no script/source).
 4. **Python 3.13 compat:** mlx-audio source `from __future__` duplicate → STT SyntaxError → A ICL hangs. Fixed by cleaning 32 files (use the 3.13 venv path).
 5. **🚫 `time_stretch` BANNED:** librosa phase vocoder on many short concatenated segments produces pre-echo / phase-swimming (sounds like reverb/echo) AND muddies the crisp timbre. 多多 2026-08-11: "有回音、不清脆不像我" → reverted. Slowing is currently unsolvable (unless engine swap); keep default pace + split long turns for clarity.
 6. **🚫 `temperature=0` BANNED for A:** flattens timbre, kills crispness (Pitfall confirmed by 多多's "不清脆" feedback on v4). Use default sampling.
@@ -50,7 +50,7 @@ description: Produce, repair, mix, and quality-check DUODUO's Chinese AI-assiste
 
 ## 4. Full SOP (every step)
 
-1. **Prepare package:** reuse `05_CONTENT/02 developing/DuoDuo_Podcast_EP08_EP16_FIXED (1)/<EPxx>/draft/` — `render_segments.py` / `concat.py` / `verify/`. Same-structure packages reuse directly; do not rewrite.
+1. **Prepare package:** reuse `05_CONTENT/02 developing/多多的未完成实验播客_EP03-EP06_原声重写版_20260731/Ep08-ep16_播客多多未完成实验/<EPxx>/draft/` — `render_segments.py` / `concat.py` / `verify/`. Same-structure packages reuse directly; do not rewrite. (All EP08–16 process files live here, NOT in `03 drafts`; `03 drafts/To publish_*` is the FINAL publish queue only.)
 2. **Parse script →** `segments_render.json` manifest (SPEAKER_A/B per segment, units, wav paths, sfx).
 3. **ensure_ref:** rebuild the non-denoised reference into `/tmp/tts_ref/` (mandatory after reboot).
 4. **Render A:** `render_segments.py` auto `_split_long` (cures swallow). Delete old A wavs to trigger re-render; keep B wavs.
@@ -74,6 +74,20 @@ description: Produce, repair, mix, and quality-check DUODUO's Chinese AI-assiste
 - `verify/verify_ep11.py` (transcribe word-compare QC)
 - `verify/scan_final_audio.py` (silence-gap scan)
 
-## 7. Version record
+## 7. 自动化铁律（防超时截断半成品）
+
+**单次自动化禁止一次生成两期以上。** 每期流水线 = 渲染（Metal，~15–50min）+ 混音 + 终检 + 命名 + 发布信息 + 进 Drafts，两期合计 >2h，必超单次 agent 时长/上下文上限 → 截断产半成品（有分段无成片、下一期零进展）。
+**实测**：08-11 07:00 一次性自动化生成 EP12+EP13，EP12 渲染完被截断（无成片）、EP13 零进展。
+
+**正确结构（二选一）：**
+1. **每期独立自动化**：EP12 / EP13 各一个，各自跑完整流水线。
+2. **两阶段拆分**：阶段A = 渲染（后台长任务，只出分段）；阶段B = 混音 + 终检 + 交付（纯 numpy/CPU，不碰 Metal，快速），阶段B 等阶段A 完成再触发。
+
+**长任务与 Metal 状态（macOS）：**
+- 无 `setsid`；渲染用 `run_in_background` 启动，不要前台等（会超时）。
+- 若 segments 停止增长、log 卡 `ICL Generation 0%`：先查 `/tmp/tts_ref/` 是否还在——**`/tmp` 被清 = Mac 重启铁证**。重启会：① 清 Metal 死锁（推理恢复）② 删参考音。脚本 `ensure_ref()` 自动重建参考音（未降噪），重建后推理正常（已实测验证）。
+- 判定 Metal 死锁：load_model 成功但推理卡死被杀 = 死锁遗留；Mac 重启后自愈，参考音重建即可重渲。
+
+## 8. Version record
 
 - **EP11 v4b (2026-08-11):** reverted `temp0` + reverted `time_stretch`; only split-long retained. mp3 17:08, Chinese zero-drop, seg21 "解释" intact. This standard is anchored to v4b.

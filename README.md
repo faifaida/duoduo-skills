@@ -3,7 +3,7 @@
 多多个人公司 WorkBuddy 技能库 · 多设备共享源。
 
 ## 是什么
-- `skills/` 下 24 个技能 = 多多所有自建 workflow skill 的**唯一权威版本**。
+- `skills/` 下 31 个技能 = 多多所有自建 workflow skill 的**唯一权威版本**。
 - Mac / Windows 任何设备的 WorkBuddy 都从这里安装或更新技能，不再依赖 Obsidian vault 镜像。
 - `catalog.md` = 人读总览；`skills-manifest.json` = 机读清单（每文件 sha256，供比对同步）。
 

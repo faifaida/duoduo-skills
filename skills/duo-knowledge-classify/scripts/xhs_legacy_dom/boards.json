@@ -1,0 +1,14 @@
+{
+  "vault": "/Users/Zhuanz/Library/Mobile Documents/iCloud~md~obsidian/Documents/DuoDuo_AI_Workspace/05_CONTENT/小红书收藏",
+  "profile": "https://www.xiaohongshu.com/user/profile/583a9ac67fc5b85a7fa37305?tab=fav&subTab=board",
+  "boards": [
+    {"name": "习惯和思考", "id": "60d1edbe000000000101cda7"},
+    {"name": "文旅",       "id": "663a464c000000001c0190c8"},
+    {"name": "青旅",       "id": "6923f149000000001103ca4a"},
+    {"name": "剪辑",       "id": "699ddc38000000002600eaea"},
+    {"name": "职业",       "id": "5b11035933e4604d71a59368"},
+    {"name": "养生大法",   "id": "5b11753120acbb134527435e"},
+    {"name": "关系恋爱",   "id": "61213bc40000000001000b85"},
+    {"name": "审美",       "id": "67e2ee140000000023004af4"}
+  ]
+}
