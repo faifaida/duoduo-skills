@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+  ════════════════════════════════════════════════════════════════════
+  canonical 发布排期模板 · 封于 duo-socialpublish-cdp 技能（2026-08-01）
+  ════════════════════════════════════════════════════════════════════
+  · 每周五生成下一周窗口（本周五 → 下周五，共 8 天）的排期时，复制本结构。
+  · CSS、9 条锁死规则、`.day`/`.uni`/`.tally`/`.next` 版式一律不动，只替换
+    日期 / 认知 / 账号行内容（文案状态列填“已有草稿 / 待写 / 同 xx”）。
+  · 源真值三处需一致：
+      - 工作区：98_Windows_work/02_内容运营/发布排期_<窗口>.html
+      - 网站：  faifaida/duoduo-os → app/board/board.html.ts（构建后 = faifaida.com/board）
+      - 依据：  Human3_内容执行包/SOP_全平台执行手册_20260724 2.md §1 + 🧷07_长文发布内容库.md
+  · 认知日轮转（按当周日历推算）：C1/C2/C3/C4/C5 五天轮转 + 知识库号独立线
+    + 世斐额外线；C2 = DUODUO WEAR 泳衣日。
+  ════════════════════════════════════════════════════════════════════
+-->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>发布排期 {{START}}–{{END}} · 全平台</title>
+<style>
+  :root{
+    --linen:#F1E9DA; --night:#151A2E; --teal:#00B6C5; --teal-d:#1FCEDD;
+    --ink:#151A2E; --muted:#5b6478; --line:#e0d6c2; --card:#fbf7ef;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--linen);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;
+    line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:980px;margin:0 auto}
+  header{border-bottom:3px solid var(--night);padding-bottom:14px;margin-bottom:22px}
+  h1{font-size:25px;margin:0 0 4px;letter-spacing:.5px}
+  .sub{color:var(--muted);font-size:13px}
+  h2{font-size:18px;margin:34px 0 12px;padding-left:10px;border-left:5px solid var(--teal)}
+  .legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px;font-size:12px}
+  .chip{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:3px 11px}
+  .chip b{color:var(--teal-d)}
+  .okbox{background:#eef9ea;border:1px solid #bfe0b4;border-radius:10px;padding:13px 15px;margin:12px 0;font-size:13px}
+  .okbox b{color:#2f7a2f}
+  .day{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden}
+  .day .top{display:flex;align-items:baseline;gap:12px;padding:13px 16px;background:var(--night);color:#fff}
+  .day .top .d{font-size:17px;font-weight:700}
+  .day .top .cog{font-size:13px;color:var(--teal-d);font-weight:600}
+  .day .top .boost{margin-left:auto;font-size:11px;background:var(--teal);color:#04222a;padding:2px 9px;border-radius:20px;font-weight:700}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:8px 12px;border-top:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:12px;background:#f6efe2}
+  td .acct{font-weight:600}
+  .tag{display:inline-block;font-size:11px;border-radius:6px;padding:1px 7px;margin-right:4px}
+  .t-wen{background:#e7f7f9;color:#0a6b75}
+  .t-chang{background:#eef0ff;color:#3a3f9e}
+  .t-vid{background:#fdeaf1;color:#a83267}
+  .t-bo{background:#fff0d6;color:#9a6a00}
+  .owner{font-size:11px;border-radius:6px;padding:1px 7px}
+  .o-wo{background:#e8f6e8;color:#2f7a2f}
+  .o-mac{background:#eee;color:#555}
+  .o-self{background:#f3e8ff;color:#7a3fae}
+  .status{color:var(--muted);font-size:12px}
+  .ok{color:#2f7a2f}.todo{color:#b9651a}
+  .uni{background:#eaf3ff;border:1px dashed #9bb8e0;border-radius:8px;padding:7px 11px;margin:6px 0;font-size:12.5px}
+  .uni b{color:#2f5aa8}
+  .tally{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px}
+  .tally th,.tally td{padding:7px 10px;border:1px solid var(--line)}
+  .tally th{background:#f6efe2}
+  .okk{color:#2f7a2f;font-weight:700}
+  .next{background:#eef9fa;border:1px solid #bfe6ea;border-radius:10px;padding:14px 16px;font-size:13.5px;margin-top:10px}
+  footer{margin-top:30px;color:var(--muted);font-size:11.5px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>全平台发布排期 · {{START}} → {{END}}</h1>
+  <div class="sub">依据 SOP_全平台执行手册_20260724 2 · §1 频次表 ｜ 窗口 8 天（周五→下周五）｜ 视频=Mac / 知识库号=多多自写 / 其余文案=我</div>
+</header>
+
+<div class="legend">
+  <span class="chip"><b>格式</b> 图文 / 长文 / 视频 / 播客</span>
+  <span class="chip"><b>归属</b> 我=文案 ｜ Mac=视频 ｜ 多多自写=知识库号</span>
+  <span class="chip"><b>认知</b> C1家族主权 · C2泳衣真实 · C3身体节律 · C4 AI公司 · C5总命题</span>
+</div>
+
+<div class="okbox">
+  <b>✅ 锁死规则（排期必须遵守，禁止漂移）：</b><br>
+  ① <b>日轮转</b>：窗口内 C1/C2/C3/C4/C5 五天轮转 + 知识库号独立线 + 世斐额外线；C2 = DUODUO WEAR 泳衣日。<br>
+  ② <b>世斐号</b>：抖音 / 小红书 / 视频号 各 2 视频/周（旅行线，不绑 C1–C5）。<br>
+  ③ <b>短文组齐发</b>：X / Threads / 微博 / 即刻 / 知识星球 = 一组，每个个人 C 日（非 C2）<b>同天齐发、同内容</b>；X + Threads 发英文、措辞微差（写两份）。<br>
+  ④ <b>Medium / Substack</b>：双周·奇数周 各 1 篇 C5 英文长文（同公众号 C5 改编）。<br>
+  ⑤ <b>多多OS 三视频平台</b>：抖音 / 小红书 / 视频号 <b>同一天发同一条视频</b>，每周 2 条。<br>
+  ⑥ <b>一天同一账号只发 1 条</b>：视频日占掉该号小红书槽位，当天不再另发图文。<br>
+  ⑦ <b>公众号 C 开放</b>：C1 / C3 / C4 / C5 都可发。<br>
+  ⑧ <b>多多OS 个人号不发泳衣</b>；C2 只归 DUODUO WEAR 泳衣。<br>
+  ⑨ <b>世斐 = 额外旅行/冲浪内容</b>，不绑 C1–C5。
+</div>
+
+<!-- ============ 主排期 ============ -->
+<h2>一、逐日排期（8 天）</h2>
+
+<!-- 模板示例日：个人 C 日（带短文组齐发横幅）。每周复制此 .day 块，替换日期/认知/账号行 -->
+<div class="day">
+  <div class="top"><span class="d">{{MM/DD}} 周X</span><span class="cog">{{Cx}} 认知名</span><!-- 周末加：<span class="boost">周末 boost</span> --></div>
+  <div class="uni"><b>短文组齐发 ｜ X + Threads + 微博 + 即刻 + 知识星球</b> ｜ 同内容·同天发 ｜ X/Threads 发英文、措辞微差 ｜ 认知 {{Cx}} ｜ <span class="todo">待写</span></div>
+  <table>
+    <tr><th>账号</th><th>格式</th><th>归属</th><th>文案状态 / 来源</th></tr>
+    <tr><td class="acct">小红书 · 多多OS</td><td><span class="tag t-wen">图文</span></td><td><span class="owner o-wo">我</span></td><td class="status"><span class="ok">已有草稿</span> / <span class="todo">待写</span> …</td></tr>
+    <tr><td class="acct">小红书 · 多多的未完成实验（知识库号）</td><td><span class="tag t-wen">图文</span></td><td><span class="owner o-self">多多自写</span></td><td class="status">{{Cx}} · 多多自写</td></tr>
+    <tr><td class="acct">多多OS 视频（抖音 / 小红书 / 视频号 同条同天）</td><td><span class="tag t-vid">视频</span></td><td><span class="owner o-mac">Mac</span></td><td class="status">{{Cx}} 同一条视频三平台同天发（Mac）</td></tr>
+    <tr><td class="acct">世斐（抖音 / 小红书 / 视频号）</td><td><span class="tag t-vid">视频</span></td><td><span class="owner o-mac">Mac</span></td><td class="status">旅行线 视频（Mac）· 三平台同一条 · 额外内容</td></tr>
+    <tr><td class="acct">X · @faifaida1</td><td><span class="tag t-wen">图文·英文</span></td><td><span class="owner o-wo">我</span></td><td class="status"><span class="todo">待写</span> 英文 {{Cx}}</td></tr>
+    <tr><td class="acct">Threads · @faifaida</td><td><span class="tag t-wen">图文·英文</span></td><td><span class="owner o-wo">我</span></td><td class="status"><span class="todo">待写</span> 英文 {{Cx}}（措辞微调）</td></tr>
+    <tr><td class="acct">微博 / 即刻 / 知识星球</td><td><span class="tag t-wen">图文</span></td><td><span class="owner o-wo">我</span></td><td class="status"><span class="todo">待写</span> 统一稿 {{Cx}}（三平台同内容）</td></tr>
+    <tr><td class="acct">公众号 · 多多</td><td><span class="tag t-chang">长文</span></td><td><span class="owner o-wo">我</span></td><td class="status"><span class="todo">待写</span> 内容库 Vx</td></tr>
+    <tr><td class="acct">Medium · faifaida</td><td><span class="tag t-chang">长文·英文</span></td><td><span class="owner o-wo">我</span></td><td class="status">{{C5 奇数周才发}} 英文（同公众号 C5 改编）</td></tr>
+    <tr><td class="acct">Substack · faifaida</td><td><span class="tag t-chang">长文·英文</span></td><td><span class="owner o-wo">我</span></td><td class="status">{{C5 奇数周才发}} 英文（同公众号 C5 改编）</td></tr>
+    <tr><td class="acct">播客（小宇宙/喜马拉雅/Apple/公众号/网易云/小红书）</td><td><span class="tag t-bo">播客</span></td><td><span class="owner o-mac">Mac</span></td><td class="status">周日/周三档 · 内容已定（EP 待渲染）</td></tr>
+  </table>
+</div>
+
+<!-- C2 泳衣日示例（多多OS 静默，DUODUO WEAR 线发） -->
+<div class="day">
+  <div class="top"><span class="d">{{MM/DD}} 周X</span><span class="cog">C2 泳衣真实（DUODUO WEAR 日）</span><!-- 周末加 boost --></div>
+  <table>
+    <tr><th>账号</th><th>格式</th><th>归属</th><th>文案状态 / 来源</th></tr>
+    <tr><td class="acct">小红书 · DUODUO WEAR泳衣</td><td><span class="tag t-wen">图文</span> / <span class="tag t-vid">视频</span></td><td><span class="owner o-wo">我</span> / <span class="owner o-mac">Mac</span></td><td class="status">…</td></tr>
+    <tr><td class="acct">公众号 · DUODUO WEAR泳衣</td><td><span class="tag t-chang">长文</span></td><td><span class="owner o-wo">我</span></td><td class="status">…</td></tr>
+    <tr><td class="acct">Instagram · @duoduo.wear</td><td><span class="tag t-wen">图文</span> / <span class="tag t-vid">视频</span></td><td><span class="owner o-wo">我</span> / <span class="owner o-mac">Mac</span></td><td class="status">同小红书</td></tr>
+    <tr><td class="acct">视频号 / 抖音 · DUODUO WEAR泳衣</td><td><span class="tag t-vid">视频</span></td><td><span class="owner o-mac">Mac</span></td><td class="status">泳衣视频（Mac）</td></tr>
+    <tr><td class="acct">多多OS 视频（抖音/小红书/视频号 同条同天）</td><td><span class="tag t-vid">视频</span></td><td><span class="owner o-mac">Mac</span></td><td class="status">C2 同一条视频三平台同天发（Mac）· 多多OS 第 2 条</td></tr>
+  </table>
+</div>
+
+<!-- ============ 频次核对（账号清单锁死，每周只填“本窗口排期”列） ============ -->
+<h2>二、账号频次核对（窗口 8 天 ≈ 1.14 周）</h2>
+<table class="tally">
+  <tr><th>账号</th><th>SOP 周频次</th><th>本窗口排期</th><th>状态</th></tr>
+  <tr><td>小红书 多多OS</td><td>3–4（2视频+1–2图文）</td><td>图文 + 视频2</td><td class="okk">✓</td></tr>
+  <tr><td>小红书 DUODUO WEAR泳衣</td><td>2（1视频+1图文）</td><td>图文 + 视频</td><td class="okk">✓</td></tr>
+  <tr><td>小红书 多多的未完成实验（知识库号）</td><td>3（图文·多多自写）</td><td>图文3</td><td class="okk">✓</td></tr>
+  <tr><td>公众号 多多</td><td>2（长文·C1/C3/C4/C5 均可）</td><td>长文2</td><td class="okk">✓</td></tr>
+  <tr><td>公众号 DUODUO WEAR泳衣</td><td>1（长文）</td><td>长文1</td><td class="okk">✓</td></tr>
+  <tr><td>微博 / 即刻 / 知识星球（三平台统一）</td><td>各 5（图文）</td><td>统一 5 天</td><td class="okk">✓</td></tr>
+  <tr><td>X @faifaida1</td><td>4（英文图文）</td><td>齐发短文组</td><td class="okk">✓</td></tr>
+  <tr><td>Threads @faifaida</td><td>4（英文图文）</td><td>齐发短文组</td><td class="okk">✓</td></tr>
+  <tr><td>Instagram @duoduo.wear</td><td>2（1视频+1图文·同小红书）</td><td>图文 + 视频</td><td class="okk">✓</td></tr>
+  <tr><td>视频号 DUODUO WEAR泳衣</td><td>2（视频）</td><td>视频2</td><td class="okk">✓</td></tr>
+  <tr><td>抖音 DUODUO WEAR泳衣</td><td>2（视频）</td><td>视频2</td><td class="okk">✓</td></tr>
+  <tr><td>视频号 多多OS</td><td>2（视频）</td><td>视频2</td><td class="okk">✓</td></tr>
+  <tr><td>抖音 多多OS</td><td>2（视频）</td><td>视频2</td><td class="okk">✓</td></tr>
+  <tr><td>世斐（抖音 / 小红书 / 视频号）</td><td>各 2（视频·旅行线）</td><td>视频2 × 3 平台</td><td class="okk">✓</td></tr>
+  <tr><td>播客（多平台）</td><td>2（周日·周三）</td><td>0802 + 0805</td><td class="okk">✓</td></tr>
+  <tr><td>Medium / Substack</td><td>双周1（C5）</td><td>各 1（奇数周）</td><td class="okk">✓</td></tr>
+  <tr><td>YouTube</td><td>延后</td><td>0</td><td class="okk">✓ 延后</td></tr>
+</table>
+
+<!-- ============ 下一步 ============ -->
+<h2>三、下一步</h2>
+<div class="next">
+  排期结构/格式已封板进 <code>duo-socialpublish-cdp</code> 技能（<code>schedule-template.html</code> 为 canonical 模板，9 条规则与 CSS 锁死，每周五自动生成下周窗口同结构排期）。<br><br>
+  <b>下一阶段：与多多逐格定「文案标题 + tag」。</b>范围 = 归属「我」的文案格（图文/长文/英文）；视频/播客/知识库号由 Mac/多多自写，其标题/tag 协同定。定稿进 🧷 内容库并回填本排期对应格。<br><br>
+  <b>待拍板假设（不影响结构）：</b><br>
+  • 公众号本窗口按 SOP 2 篇；C3/C4 日已开放，想加到 3–5 篇告诉我。<br>
+  • C2 是否全锚定周三（若否，按当周日历轮转）。
+</div>
+
+<footer>内容运营 · 发布排期 {{START}}–{{END}} ｜ 生成 {{DATE}} ｜ 按 SOP_全平台执行手册_20260724 2 · §1 频次表（含世斐）</footer>
+</div>
+</body>
+</html>
