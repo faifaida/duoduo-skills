@@ -433,6 +433,19 @@
         "duoduo-wear-poster/references/duo-wear-painting/scripts/build_prompt.py": "d4e3b748e6bf3f3052b988ae9d5933afaf13cf0d",
         "duoduo-wear-poster/references/duo-wear-painting/scripts/compose_note.py": "e95bc67b0f368764967d5bc95bf7224d1627e482"
       }
+    },
+    "duo-socialpublish-cdp": {
+      "file_count": 2,
+      "files": {
+        "duo-socialpublish-cdp/SKILL.md": "33ca6054eec4a99b651180e604e388f6dce49110",
+        "duo-socialpublish-cdp/schedule-template.html": "de887230e804a0ef533b72f857bd5bf74df893aa"
+      }
+    },
+    "duo-content-weekly-workflow": {
+      "file_count": 1,
+      "files": {
+        "duo-content-weekly-workflow/SKILL.md": "eafb4029796126966e4454cd1d45a98d365ed223"
+      }
     }
   }
 }
