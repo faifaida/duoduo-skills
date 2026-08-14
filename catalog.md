@@ -17,8 +17,8 @@
 - 说明: 多多个人生活操作系统：当日日记汇总、日记转日历、每日灵魂拷问、语音日记采集、周复盘、草稿 AI 精修、月相周历整合。 本 skill 由多个相关子能力合并而成，触发时按下方索引表加载对应子模块，避免一次性载入全部内容。
 
 ### duo-podcast-studio
-- 文件数: 10
-- 说明: 多多中文 AI 对话播客「未完成实验」一站式技能：从单集制作/修复/混音/质检，到把小宇宙新单集同步到 Apple Podcasts 与喜马拉雅。 本 skill 由多个相关子能力合并而成，触发时按下方索引表加载对应子模块，避免一次性载入全部内容。
+- 文件数: 20
+- 说明: 多多中文 AI 对话播客「未完成实验」一站式技能（Windows 全量版）：A 锁定生产标准/7 项质检门 + B 内容重用途流水线(podcast_pipeline.py) + C TTS 音频生成(Build) + D 三平台分发(小宇宙/Apple/喜马拉雅)。本地 Windows 流水线文件已并入，Mac 侧 references/02-podcast-sync 同步脚本保留。
 
 ### duo-voice-deai
 - 文件数: 95
@@ -30,7 +30,7 @@
 
 ### duo-wear-painting
 - 文件数: 6
-- 说明: 
+- 说明: **（已废弃，2026-08-14 并入 duoduo-wear-poster §9）**
 
 ### duo-wechat
 - 文件数: 21
@@ -74,4 +74,16 @@
 
 ### visual-understanding-toolkit
 - 文件数: 3
-- 说明: 
+- 说明:
+
+### duoduo-wear-poster
+- 文件数: 38
+- 说明: DUODUO WEAR 泳衣品牌海报生成（锁死版式 + footer/logo 叠合）+ 已并入编辑插画能力（references/duo-wear-painting/，知识分享/口播配图/公众号插画）。从本地 Windows 推入。
+
+### duo-socialpublish-cdp
+- 文件数: 2
+- 说明: 多多全平台发布助手 + CDP 自动发布（小宇宙/微博等）。从本地 Windows 推入，已由本地同步。
+
+### duo-content-weekly-workflow
+- 文件数: 1
+- 说明: 内容运营周循环排期全流程。从本地 Windows 推入，已由本地同步。

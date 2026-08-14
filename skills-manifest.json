@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-11T17:39:45",
+  "generated": "2026-08-14T16:20:00+08:00",
   "repo": "faifaida/duoduo-skills",
   "skills": {
     "duo-company": {
@@ -131,24 +131,33 @@
       }
     },
     "duo-podcast-studio": {
-      "file_count": 10,
+      "file_count": 18,
       "files": {
-        "duo-podcast-studio/README.md": "f43f6965b0eef55c1dff687a3d5d560368479aa489cc92e706ae6a14651edba3",
-        "duo-podcast-studio/SKILL.md": "da9f54b42a1ee1b29619f6197b00092b6914806ebabde1459bb928438af2f376",
-        "duo-podcast-studio/references/01-podcast-workbuddy.md": "a25ae2439106b228ebe22ba624ef00fbccbc24ff4105186c606c0981cdd4ac01",
-        "duo-podcast-studio/references/02-podcast-sync/SKILL.md": "c8964b6cf9cc6ac5481c77aa5e0c971e603cb254691f2a72d1b4883955af4f9e",
-        "duo-podcast-studio/references/02-podcast-sync/scripts/apple_rss_sync.py": "a75f86fcca2fe337044b15cde3bed57139417395b508dbc137ccb27947a84ec9",
-        "duo-podcast-studio/references/02-podcast-sync/scripts/ensure_headless.sh": "f2908f54fcbfc2c8e8ba2f49c3fbb71aee0c0a2286706feac5ecb2b1c8633886",
-        "duo-podcast-studio/references/02-podcast-sync/scripts/run_sync.sh": "edabe1435ba01d6c7c07f4ad10c05894eefa182033763175c6add0c14b7ec2e7",
-        "duo-podcast-studio/references/02-podcast-sync/scripts/state/uploaded_episodes.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-        "duo-podcast-studio/references/02-podcast-sync/scripts/xiaoyuzhou.py": "3cd274a3a436550fc0572c5f43f978d88d58fdd76fcd1ddb03a5dafc44059155",
-        "duo-podcast-studio/references/02-podcast-sync/scripts/ximalaya_sync.py": "1d224878ecb76f8519a4b81edc4f6cea77e5713c54e1c803e37e86ff9027ef7a"
+        "duo-podcast-studio/README.md": "fe89013b6f392bda92af7feb5a5aa4af3b71572b",
+        "duo-podcast-studio/SKILL.md": "d34e4e21b15dfae0346f28cd8e0ea15997aa0385",
+        "duo-podcast-studio/references/01-podcast-workbuddy.md": "6fab43586ba14b3abea81c84ec3ac53d39913665",
+        "duo-podcast-studio/references/02-podcast-sync/SKILL.md": "bde082613a446f52ffb8b4cca30b949f6cd6b061",
+        "duo-podcast-studio/references/02-podcast-sync/scripts/apple_rss_sync.py": "3de07f1614d9e30aa1b9ac866dc0001fd2ded061",
+        "duo-podcast-studio/references/02-podcast-sync/scripts/ensure_headless.sh": "3c98d15fd81eab1b802c74c4ebb1fd22212c5916",
+        "duo-podcast-studio/references/02-podcast-sync/scripts/run_sync.sh": "ad54d7808000c8df1faf4ed9ba79c2f6227685c3",
+        "duo-podcast-studio/references/02-podcast-sync/scripts/state/uploaded_episodes.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+        "duo-podcast-studio/references/02-podcast-sync/scripts/xiaoyuzhou.py": "1e61be527b398d56e4668d16682e69060993223c",
+        "duo-podcast-studio/references/02-podcast-sync/scripts/ximalaya_sync.py": "4b74e8a2f7e145508a84e9a8c1cceeffda940946",
+        "duo-podcast-studio/podcast_pipeline.py": "5c9df445cf2592507eaac49c11ee6eddce8d6263",
+        "duo-podcast-studio/README_podcast_ops.md": "141da3b2120928268e7916eea57dea87dfb3ec95",
+        "duo-podcast-studio/requirements.txt": "99d2b8d7bd68b5c84af929e27a89333588fd875f",
+        "duo-podcast-studio/WINDOWS_NOTES.md": "4402c205f269ceaf2eb1dd1b843d741c6a9fe8b0",
+        "duo-podcast-studio/agents/openai.yaml": "6fb24297e93e112a0ca835abcb665295f4173456",
+        "duo-podcast-studio/references/voice-and-mix-standard.md": "9f82211d765c20252b5d35bac81487bde7c5a5b2",
+        "duo-podcast-studio/scripts/parse_turn_manifest.py": "10139d4930ddc487cd70b6bc833d4e926b3fb22e",
+        "duo-podcast-studio/scripts/qc_audio.py": "e10c38b0cc80ebb27f2a655cc93220c6a6cafb0e"
       }
     },
     "duo-video-script": {
-      "file_count": 1,
+      "file_count": 2,
       "files": {
-        "duo-video-script/SKILL.md": "cea516127166280807754039f21d9ce4e476ddd947b160add25534f74b1ef356"
+        "duo-video-script/SKILL.md": "571288c86a4d3edb008ece5913b9814b9330766c",
+        "duo-video-script/README.md": "a8deb728f7ba7d263e9e338450467a7dd685c046"
       }
     },
     "duo-voice-deai": {
@@ -255,7 +264,7 @@
       "file_count": 6,
       "files": {
         "duo-wear-painting/CHANGELOG.md": "c2b6ecbcdedb3ca860f703b35e295cb6b84b36f27308672a588ed59f860061da",
-        "duo-wear-painting/SKILL.md": "4b4b6708492e556a1451560420b1701310b04f19be13d6648dc6d7000830b117",
+        "duo-wear-painting/SKILL.md": "dcaf9c7620f580e840dc28528fec3f2d55c15b9a",
         "duo-wear-painting/references/composition_specs.md": "bbb94a5a9221589fa720bec698ee3a9e7a583ee5a7846f8ef9e6517b0dea1f7b",
         "duo-wear-painting/references/style_prompt.md": "88015f72a3cb17f557f127e25e16354802e3f8508c82f80ddb2345c68ee07df2",
         "duo-wear-painting/scripts/build_prompt.py": "514f537236dbfbe41f3ec7b238e6e9bcb4d4758b8504ab21e040cfa18e7abcab",
@@ -380,6 +389,49 @@
         "visual-understanding-toolkit/SKILL.md": "c45927f9b85727f75ba3a0569db271737566be17b30ba2d0fe6ed99e270f3ee2",
         "visual-understanding-toolkit/references/ollama_local_read.py": "65a557a638dcb1aa5a391722ef01192ecde95599a3520eb29a7e6e792d478e34",
         "visual-understanding-toolkit/references/read_image_prompt.md": "e687a30ac9e53dd978ab601860fa7aabc3c00d69628685b7ef69d9e2e2f66c1d"
+      }
+    },
+    "duoduo-wear-poster": {
+      "file_count": 38,
+      "files": {
+        "duoduo-wear-poster/SKILL.md": "6950bb8771654a2ab78ceaf6a53e25c9489a17c1",
+        "duoduo-wear-poster/assets/brand_library/abysse/11602-4-006copy.jpg": "26040c38fe3c507e390ab6d4935c9069a75cd66b",
+        "duoduo-wear-poster/assets/brand_library/abysse/ABYSSE_SUMMER_ECOM_07_09_2026_4575.jpg": "6ba93e7465a37e60182727534c906e7d2c57c6b5",
+        "duoduo-wear-poster/assets/brand_library/abysse/ABYSSE_SUMMER_ECOM_07_09_2026_4577.jpg": "868e74cd2672f2f5a2a93b621fca7adcc30aa1c6",
+        "duoduo-wear-poster/assets/brand_library/abysse/ABYSSE_SUMMER_ECOM_07_09_2026_4578.jpg": "fbf3f4c77ceb01d4598142eec4cc8d00784f8133",
+        "duoduo-wear-poster/assets/brand_library/abysse/ABYSSE_SUMMER_ECOM_07_09_2026_4579.jpg": "ee5279ae5d607de1084dd0962fe5e45edb3f0de7",
+        "duoduo-wear-poster/assets/brand_library/abysse/ABYSSE_SUMMER_ECOM_07_09_2026_4923.jpg": "266df9380c977ea296b7c04bec05bb2feda16481",
+        "duoduo-wear-poster/assets/brand_library/abysse/ABYSSE_SUMMER_ECOM_07_09_2026_4928.jpg": "e5575fb53838d6a8bae4c794fd0278c1b4f8fca9",
+        "duoduo-wear-poster/assets/brand_library/abysse/Abysse_4-8copy.jpg": "4b29ad6304a05e3f8e2b59abbbe8a3f72dafad45",
+        "duoduo-wear-poster/assets/brand_library/duoduo_wear/poster_fluorescent.png": "5fc3b7743a70041ec8fce46ea572369b5a3485b2",
+        "duoduo-wear-poster/assets/brand_library/duoduo_wear/poster_hero.png": "14515be9df34d1a95594d4d88f228a2a3b229b49",
+        "duoduo-wear-poster/assets/brand_library/duoduo_wear/poster_shimmer.png": "102b3ea12db0c7b28c8d3595819edfab7a5e9467",
+        "duoduo-wear-poster/assets/brand_library/duoduo_wear/poster_tribal.png": "f434907c156e498960210ecf84fee58dbf9b7183",
+        "duoduo-wear-poster/assets/brand_library/fella/1_de99e4ed-071e-43cc-b32a-82d4f9c14bc0.png": "1d549b28d6f655bdf81516b7cb0fafc17c63a714",
+        "duoduo-wear-poster/assets/brand_library/fella/IMG_3491.jpg": "239b33e1de0b1d3e7ff8cada27e2cf5a229b5616",
+        "duoduo-wear-poster/assets/brand_library/fella/S65-arnie-top-giuseppe-bottom-poseidon-25931-FellaSwim-0962-2.jpg": "a31a8b5b89d79cecafc69dbfae6e6a1e9a93a63c",
+        "duoduo-wear-poster/assets/brand_library/fella/bernie-top-brian-bottom-poseidon-campaign--4.jpg": "2b13b25ceb1849dfa13e54d21572157527865930",
+        "duoduo-wear-poster/assets/brand_library/fella/creme_3670bf8a-be1f-4fc2-944e-7e871b96ca3e.jpg": "510fe8520a3b4803a678a701373459a50bfda9a5",
+        "duoduo-wear-poster/assets/brand_library/fella/dolce-fullpiece-poseidon--campaign-1.jpg": "26419dee43621fb3b9fa7f3c1f4f14eebb223908",
+        "duoduo-wear-poster/assets/brand_library/vbq/MENZI101-339-front-3240x4050.jpg": "e85fecb923d90ad89bade73ec047387022f71d77",
+        "duoduo-wear-poster/assets/brand_library/vbq/MEN_lookbook.jpg": "bd45976349da5ce9d01db349230f9b0bb89f4b75",
+        "duoduo-wear-poster/assets/brand_library/vbq/MISEC493-432-front-3240x4050.jpg": "f3079138c6a6e3a702abc82eec36e1b744b0fc1c",
+        "duoduo-wear-poster/assets/brand_library/vbq/MOOEB142-354-override-3240x4050.jpg": "86f53f6df1a12fe9affc1fcd920ea6dca7e927b0",
+        "duoduo-wear-poster/assets/brand_library/vbq/MOOED111-367-front-3240x4050.jpg": "579ce8919deb081d036376d3039b8e03650de505",
+        "duoduo-wear-poster/assets/brand_library/vbq/MSOEF118-618-front-3240x4050.jpg": "b86f9c78f8b834117c1012dc5b6198d3d265d7d2",
+        "duoduo-wear-poster/assets/brand_library/vbq/MSOEF123-620-front-3240x4050.jpg": "475b73f33987d4cc8694cf8e7a5ca23532fab993",
+        "duoduo-wear-poster/assets/logo_band_768x134.png": "8e40ad184b355fabc71e3250c6d7212af375497a",
+        "duoduo-wear-poster/assets/logo_only_768x94.png": "ec84530c630dd39256447bb686d999fe8c1551b8",
+        "duoduo-wear-poster/assets/ref_poster_flatlay_768x1074.png": "1962fd49e45bb32610017044333b7f28ed00b81a",
+        "duoduo-wear-poster/assets/ref_poster_hero_phone.jpg": "4020d97bf38dbec030ff0c06096a557509ff155d",
+        "duoduo-wear-poster/references/prompt_templates.md": "d3c9d8f357dd4324327e69c5b85cc4743ef968e3",
+        "duoduo-wear-poster/references/technical_specs.md": "57e206eff6ec2d61b47306cd557e71c4f20480cf",
+        "duoduo-wear-poster/scripts/compose_poster.py": "411110adce6c4561f8954bd05af7bac132e40bb2",
+        "duoduo-wear-poster/references/duo-wear-painting/SKILL.md": "e2f82a7f2b3bbf42924be2e229592f36e4a95391",
+        "duoduo-wear-poster/references/duo-wear-painting/references/composition_specs.md": "0752e3512c7f1ec091e8e5856e3786fa767debe0",
+        "duoduo-wear-poster/references/duo-wear-painting/references/style_prompt.md": "3af949090a25f890851246b1c25d1b860972b255",
+        "duoduo-wear-poster/references/duo-wear-painting/scripts/build_prompt.py": "d4e3b748e6bf3f3052b988ae9d5933afaf13cf0d",
+        "duoduo-wear-poster/references/duo-wear-painting/scripts/compose_note.py": "e95bc67b0f368764967d5bc95bf7224d1627e482"
       }
     }
   }

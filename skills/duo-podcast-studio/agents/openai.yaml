@@ -1,0 +1,4 @@
+interface:
+  display_name: "DUO Podcast"
+  short_description: "用于多多双人AI播客的脚本核对、生成、混音与全片质检流程"
+  default_prompt: "Use $duo-podcast to produce and quality-check a DUODUO podcast episode from a dialogue script."

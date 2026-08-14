@@ -5,6 +5,8 @@ agent_created: true
 author: 多多 (DuoDuo)
 license: 复用 duoduo-design-system 品牌 DNA（CC BY-NC-SA 4.0 改写版）
 ---
+> ⚠️ **本技能已废弃（2026-08-14）**：编辑插画能力已并入 `duoduo-wear-poster`（见其 §9 与 `references/duo-wear-painting/`）。本目录仅作历史存档，新工作请改用 `duoduo-wear-poster`。
+
 
 # DUO WEAR Painting — 品牌插画生成与图文合成
 
