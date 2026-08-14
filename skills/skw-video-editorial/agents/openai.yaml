@@ -1,0 +1,4 @@
+interface:
+  display_name: "SKW Video Editorial"
+  short_description: "Storytelling, decupagem, rhythm, and sound"
+  default_prompt: "Use $skw-video-editorial to design a story-led video brief and shot-by-shot edit plan."
