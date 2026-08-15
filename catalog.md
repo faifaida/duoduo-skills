@@ -75,3 +75,11 @@
 ### visual-understanding-toolkit
 - 文件数: 3
 - 说明: 
+
+## os-video-edit（新增 · 2026-08-15）
+- 多多OS·回家接班实验 剪辑流程（路径A 本地 OpenChatCut+ffmpeg / 路径B 云端 ChatCut MCP）。
+- **独立技能**，与 `duoduo-video-edit`（DUODUO WEAR 品牌视频制作）并列，**不合并**。
+- 来源：Windows 本机 `~/.workbuddy/skills/os-video-edit/`（最新，Aug 10）。
+
+## duo-video-script（更新 · 2026-08-15）
+- 新增 `README.md`（脚本写作规范说明），SKILL.md 内容未变。
