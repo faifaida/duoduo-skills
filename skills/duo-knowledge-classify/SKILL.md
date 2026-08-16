@@ -1,8 +1,10 @@
 ---
 name: duo-knowledge-classify
-summary: "DUO Knowledge Classify（碎片知识统一加工总入口，扩展版）"
-description: |
-  多多个人公司碎片知识统一加工系统：小红书/微信读书/微信聊天/云盘归档采集分类，并扩展接入日历写入、微信读书周摘要、小红书周摘要、Gmail 清理、Notion 日记拆分。
+summary: DUO Knowledge Classify（碎片知识统一加工总入口，扩展版）
+description: >
+  多多个人公司碎片知识统一加工系统：小红书/微信读书/微信聊天/云盘归档采集分类，并扩展接入日历写入、微信读书周摘要、小红书周摘要、Gmail
+  清理、Notion 日记拆分。
+
   本 skill 由多个相关子能力合并而成，触发时按下方索引表加载对应子模块，避免一次性载入全部内容。
 agent_created: true
 type: consolidated
@@ -13,6 +15,7 @@ merged_from:
   - duoduo-xhs-weekly-digest
   - gmail-imap-cleanup
   - notion-journal-split
+disable-model-invocation: true
 ---
 
 # DUO Knowledge Classify（碎片知识统一加工总入口，扩展版）
@@ -27,6 +30,7 @@ merged_from:
 - **小红书周摘要** → 读 `references/04-xhs-weekly-digest.md`（原 `duoduo-xhs-weekly-digest`）
 - **Gmail 批量清理** → 读 `references/05-gmail-imap-cleanup.md`（原 `gmail-imap-cleanup`）
 - **Notion 日记拆分** → 读 `references/06-notion-journal-split.md`（原 `notion-journal-split`）
+- **R 笔记 T02 第一人称重写（重做/新建 Research 笔记）** → 读 `references/07-rnote-t02-rewrite.md`（原 `duo-rnote-t02-rewrite`，已并入）
 
 ## 使用约定
 
