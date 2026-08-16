@@ -75,3 +75,30 @@
 ### visual-understanding-toolkit
 - 文件数: 3
 - 说明: 
+
+## 新增（Windows 侧 codex 视频剪辑技能，2026-08-15 推）
+
+### jianying-editor
+- 说明: 剪映 (JianYing) AI自动化剪辑的高级封装 API (JyWrapper)，提供开箱即用的 Python 接口，支持录屏、素材导入、字幕生成、Web 动效合成及项目导出。全面适配 MacOS (Apple Silicon/Intel) 与 Windows，支持 v5.9+ (draft_info.json) 架构、工程自修复、智能配音字幕及录屏变焦。
+- 来源: Windows 本地 `.codex/skills/` 推入（按本地推）
+
+### openchatcut
+- 说明: Connect an MCP-capable coding agent to OpenChatCut and edit local video projects. Use when the user asks to install, connect, or set up OpenChatCut; inspect or edit an OpenChatCut project; work with its timeline, transcript, captions, media, generation, motion graphics, audio, color, or export tools; or recover from an OpenChatCut MCP error.
+- 来源: Windows 本地 `.codex/skills/` 推入（按本地推）
+
+### os-video-edit-gpt
+- 说明: Direct and edit Duoduo OS personal-account nonfiction videos, especially the 回家接班实验 series. Use for A-roll cleanup, transcript-led story editing, HTML/shot-list execution, B-roll selection, OpenChatCut or FFmpeg timelines, captions, keyword typography, documentary sound, warm color, cover design, QC, and release packages containing the video, cover, title, and publishing copy.
+- 来源: Windows 本地 `.codex/skills/` 推入（按本地推）
+
+### skw-video-editorial
+- 说明: Design story-led audiovisual briefs, case films, demo reels, institutional videos, event aftermovies, employer-branding pieces, image-bank productions, sales campaigns, and recurring performance bulletins. Use when an agent must define the business outcome, audience transformation, narrative beats, decupagem, footage-selection criteria, edit rhythm, lettering, sound design, continuity, or a Palmier Pro assembly plan.
+- 来源: Windows 本地 `.codex/skills/` 推入（按本地推）
+
+### xiaolan-aroll
+- 说明: 自动剪辑「小蓝」式口播 A-roll（口播原片）视频：去掉静音/停顿，剪掉口头喊 「卡 / cut」标记的废 take，去掉重复的 retake（保留更干净的那条），然后把剪好的视频 渲染（RENDER）回来——音画同步。输入是未剪辑的 A-roll 视频（音频是检测信号）加一份 参考脚本（SCRIPT，判断保留哪条 take、修 whisper 同音字错误的 ground truth）。 输出是收紧后的粗剪视频，后续进 CapCut 精修。全自动（FULL AUTO，所有剪切直接应用）， 但一定输出一份 keep/cut 的 EDL 日志供扫查。触发场景："edit my a-roll"、 "cut my talking head"、"remove the pauses and retakes"、"clean up my recording"、 "去掉停顿和重复/废话"、"口播剪辑"、"cut where I said 卡"、"give me the edited video"。 这是内容流水线的前半段——先把口播剪干净；`xiaolan-broll` 再往上叠 b-roll + 卡拉OK字幕。不管 b-roll/字幕（用 `xiaolan-broll`），不管开场 hook （用 `xiaolan-hook-broll`，未包含在本仓库）。
+- 来源: Windows 本地 `.codex/skills/` 推入（按本地推）
+
+### xiaolan-broll
+- 说明: 把一条完整长度的小蓝口播视频做成品牌锁定的 b-roll（配图动画层）+ 逐词弹出卡拉OK字幕层，以透明叠加层（带 alpha 的 ProRes MOV）交付， 由小蓝自己叠在她的高清 A-roll 上——A-roll 永远不烧进成片。 适用于 cream（奶油底）+ cutout（绿幕抠像素材）的 9:16 竖屏： 人物坐在画面中下方，上半屏是空的。产出 object-first 的 b-roll （每个叙事节拍一个具体的动画物件，循环 glyph 母题）、锁 VO 的逐词弹出卡拉OK （当前词 Klein blue（克莱因蓝）+ 薄荷绿下划线），johnbucog 巨字主角处理只留给金句。 触发场景："make b-roll and karaoke captions for this video / a-roll"、 "整条视频的 b-roll 和字幕"、"口播配图"、"full b-roll"、 "动图 + 字幕 for my talking head"、"transparent overlay I'll composite myself"， 或给一整条小蓝讲解视频加/重做图形+字幕。 覆盖 VO 转写、头顶测量、分段/金句规划、卡拉OK引擎、object-first 场景搭建、 自检、透明 MOV 渲染和交付。 不适用于：字幕直接烧在片段上的短 hook/开场（用 `xiaolan-hook-broll`， 未包含在本仓库），也不适用于人物在右下角的口播（用 `shorts-hyperframe`， 未包含在本仓库）。
+- 来源: Windows 本地 `.codex/skills/` 推入（按本地推）
+

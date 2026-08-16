@@ -165,3 +165,14 @@ python scripts/compose_poster.py \
 - [ ] 无 AI 水印、无额外文字、无额外图形
 - [ ] 泳衣设计与用户要求一致
 - [ ] 背景/光线/色调与参考图一致
+
+## 9. 编辑插画能力（DUO WEAR Painting · 已并入本技能）
+
+> 品牌「绘画风」插画（知识分享图 / 口播讲解配图 / 公众号插画）已并入本技能，统一复用 DUODUO WEAR 品牌 DNA。
+> 允许 AI 生图的**唯一**例外场景见 `references/duo-wear-painting/`（视频封面与品牌实拍图仍禁 AI 生图）。
+
+- 风格锁（配色/母题/字体）：`references/duo-wear-painting/references/style_prompt.md`
+- 合成规格（小红书 3:4 / 公众号 / 口播 16:9·1:1 / cutout 透明）：`references/duo-wear-painting/references/composition_specs.md`
+- 出图 prompt 拼装：`references/duo-wear-painting/scripts/build_prompt.py`
+- 去水印 + 品牌边框合成：`references/duo-wear-painting/scripts/compose_note.py`
+- 铁律：ImageGen 出水印 → 硬切底 50px；**绝不交付带「图片由AI生成」水印的图**。

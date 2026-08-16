@@ -1,0 +1,4 @@
+interface:
+  display_name: "多多 OS 视频导演"
+  short_description: "按多多的非虚构纪录片标准完成剪辑、封面与发布包"
+  default_prompt: "使用 $os-video-edit-gpt，先逐项对齐关键导演决策，再完成多多 OS 视频剪辑与交付。"
