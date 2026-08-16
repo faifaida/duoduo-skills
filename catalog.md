@@ -1,6 +1,6 @@
 # DUODUO Skills Catalog
 
-> 共 18 个技能（design-system 已移出，改为独立仓 faifaida/duoduo-design-system 为唯一真源）。生成于 2026-08-12T01:40:00 UTC。
+> 共 19 个技能（design-system 已移出，改为独立仓 faifaida/duoduo-design-system 为唯一真源）。生成于 2026-08-12T01:40:00 UTC。
 
 ## 合并型技能（consolidated）
 
@@ -74,4 +74,8 @@
 
 ### visual-understanding-toolkit
 - 文件数: 3
-- 说明: 
+- 说明:
+
+### duo-rnote-t02-rewrite
+- 文件数: 1
+- 说明: 多多 R 笔记 T02 第一人称重写：读全源 + 原话主体 + AI 理解标注 + Journal 原文归档 + R/T 双层同步。动笔前通读全部 source 与原文件，写作者为多多，谢胜子/外部作者原话标归属不冒充，读不到的标〔待补〕。
