@@ -13,10 +13,10 @@
       }
     },
     "duo-knowledge-classify": {
-      "file_count": 96,
+      "file_count": 97,
       "files": {
         "duo-knowledge-classify/README.md": "0036061914228eacb967608eb01f88d6219a6ba3acf798cd3d972f68857ccc36",
-        "duo-knowledge-classify/SKILL.md": "0eb855fb2c0896d08073595d4c96c84d4c5071167141a7adbeeba8073b746cb1",
+        "duo-knowledge-classify/SKILL.md": "da48e7d8839831d702643465c6acfc2561bb4c56ff94a623b1b7dce2950794fa",
         "duo-knowledge-classify/references/01-knowledge-classify/SKILL.md": "ade190fcf8b63acd056b15b4e8e07b1d0bcefced3829be2f1ad641efec836e68",
         "duo-knowledge-classify/references/01-knowledge-classify/references/01_小红书通道.md": "f7654fd4c48b9dc94f4dc724c937ccaf315a1f25fd922a0129ee4cfa2603cf90",
         "duo-knowledge-classify/references/01-knowledge-classify/references/02_微信读书通道.md": "3ee580faa3518ac0040f6a4483e60a05095ff523972098f47617f9ab2577b06e",
@@ -110,7 +110,8 @@
         "duo-knowledge-classify/references/03-weread-digest.md": "eeef3f7ff189fd1cb4981586513101c9e731640c5a15c43ecb4fa52c34a9493d",
         "duo-knowledge-classify/references/04-xhs-weekly-digest.md": "83ff2b4db867582e042923ed008c2e928a3b12a7251fca355606326772ea4528",
         "duo-knowledge-classify/references/05-gmail-imap-cleanup.md": "ed9d8290e790a78a864e2d48fbaf3861d40c2883aa9e6eb7a5e7311a1690089f",
-        "duo-knowledge-classify/references/06-notion-journal-split.md": "6763a3c3ac54fd3b6ae730cd5f4f735ee2fa1638ebd61836d89c65a58d299010"
+        "duo-knowledge-classify/references/06-notion-journal-split.md": "6763a3c3ac54fd3b6ae730cd5f4f735ee2fa1638ebd61836d89c65a58d299010",
+        "duo-knowledge-classify/references/07-rnote-t02-rewrite.md": "9f059984d059e50edca56f16fa6640ecc5c70023fd7dd72f7fc6a565198b60ec"
       }
     },
     "duo-life-tasks": {
@@ -380,12 +381,6 @@
         "visual-understanding-toolkit/SKILL.md": "c45927f9b85727f75ba3a0569db271737566be17b30ba2d0fe6ed99e270f3ee2",
         "visual-understanding-toolkit/references/ollama_local_read.py": "65a557a638dcb1aa5a391722ef01192ecde95599a3520eb29a7e6e792d478e34",
         "visual-understanding-toolkit/references/read_image_prompt.md": "e687a30ac9e53dd978ab601860fa7aabc3c00d69628685b7ef69d9e2e2f66c1d"
-      }
-    },
-    "duo-rnote-t02-rewrite": {
-      "file_count": 1,
-      "files": {
-        "duo-rnote-t02-rewrite/SKILL.md": "6bead3b31f1a47aaa9d9c92b676d7b8032fba27e31f7682ee63354d9930e787f"
       }
     }
   }
