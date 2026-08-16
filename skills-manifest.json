@@ -381,6 +381,12 @@
         "visual-understanding-toolkit/references/ollama_local_read.py": "65a557a638dcb1aa5a391722ef01192ecde95599a3520eb29a7e6e792d478e34",
         "visual-understanding-toolkit/references/read_image_prompt.md": "e687a30ac9e53dd978ab601860fa7aabc3c00d69628685b7ef69d9e2e2f66c1d"
       }
+    },
+    "duo-rnote-t02-rewrite": {
+      "file_count": 1,
+      "files": {
+        "duo-rnote-t02-rewrite/SKILL.md": "6bead3b31f1a47aaa9d9c92b676d7b8032fba27e31f7682ee63354d9930e787f"
+      }
     }
   }
 }
