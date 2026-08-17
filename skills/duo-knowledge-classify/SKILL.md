@@ -2,8 +2,8 @@
 name: duo-knowledge-classify
 summary: DUO Knowledge Classify（碎片知识统一加工总入口，扩展版）
 description: >
-  多多个人公司碎片知识统一加工系统：小红书/微信读书/微信聊天/云盘归档采集分类，并扩展接入日历写入、微信读书周摘要、小红书周摘要、Gmail
-  清理、Notion 日记拆分。
+  多多个人公司碎片知识统一加工系统：小红书/微信读书/微信聊天/云盘归档采集分类，并扩展接入日历写入、微信读书周摘要、小红书周摘要、邮箱
+  IMAP 批量清理（Gmail + QQ）、Notion 日记拆分。
 
   本 skill 由多个相关子能力合并而成，触发时按下方索引表加载对应子模块，避免一次性载入全部内容。
 agent_created: true
@@ -28,7 +28,7 @@ disable-model-invocation: true
 - **iCloud 日历写入** → 读 `references/02-caldav-calendar-write.md`（原 `duoduo-caldav-calendar-write`）
 - **微信读书周摘要** → 读 `references/03-weread-digest.md`（原 `duoduo-weread-digest`）
 - **小红书周摘要** → 读 `references/04-xhs-weekly-digest.md`（原 `duoduo-xhs-weekly-digest`）
-- **Gmail 批量清理** → 读 `references/05-gmail-imap-cleanup.md`（原 `gmail-imap-cleanup`）
+- **邮箱 IMAP 批量清理（Gmail + QQ / 中文邮箱）** → 读 `references/05-gmail-imap-cleanup.md`（原 `gmail-imap-cleanup`，已扩展支持 Gmail + QQ 双账号；配套 `scripts/mail_imap_cleanup.py` 自助读 vault 取凭证、只读诊断 / 全自动可恢复归档）
 - **Notion 日记拆分** → 读 `references/06-notion-journal-split.md`（原 `notion-journal-split`）
 - **R 笔记 T02 第一人称重写（重做/新建 Research 笔记）** → 读 `references/07-rnote-t02-rewrite.md`（原 `duo-rnote-t02-rewrite`，已并入）
 
