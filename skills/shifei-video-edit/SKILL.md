@@ -7,7 +7,7 @@ description: 剪辑多多的世斐（Shifei）非虚构旅行、人物、现场�
 
 把世斐剪成真实世界的理解，而不是旅行景观。当前主线是：**这个人让我看懂了这里。**
 
-先读 `references/editorial-system.md`。人物对谈读 `references/people-interview.md`；要复刻 Sri Lanka / Oday 横屏成片时再读 `references/oday-horizontal-recipe.md`；Field Notes 或旅行旁白读 `references/field-notes.md`；开剪前和交付前按 `references/production-qa.md` 执行。
+先读 `references/editorial-system.md`。人物对谈读 `references/people-interview.md`；要复刻 Sri Lanka / Oday 横屏成片时再读 `references/oday-horizontal-recipe.md`；Field Notes 或旅行旁白读 `references/field-notes.md`；开剪前和交付前按 `references/production-qa.md` 执行。若任务是对已有 MASTER 做字幕+音乐+封面重混，读 `references/subtitle-bgm-remix.md`。
 
 ## 账号边界
 
