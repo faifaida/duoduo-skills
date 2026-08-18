@@ -9,6 +9,10 @@ description: 剪辑多多的世斐（Shifei）非虚构旅行、人物、现场�
 
 先读 `references/editorial-system.md`。人物对谈读 `references/people-interview.md`；要复刻 Sri Lanka / Oday 横屏成片时再读 `references/oday-horizontal-recipe.md`；Field Notes 或旅行旁白读 `references/field-notes.md`；开剪前和交付前按 `references/production-qa.md` 执行。若任务是对已有 MASTER 做字幕+音乐+封面重混，读 `references/subtitle-bgm-remix.md`。
 
+## 制作硬指标（权威数值，先看这条）
+
+精确素材配比、1.2× 节奏、原声优先、字幕 / 音乐 / 转场的所有数值与结构硬指标，**统一见 `references/production-spec.md`**。该文件是数值与结构的唯一权威来源；本 SKILL 及其余 reference 与之冲突时以它为准。核心速记：人 ≥ 80% / 多多本人 ≥ 60% / landscape ≤ 20% / 图:视频 = 3:7 / 成片 1:50–2:30 / 对镜原声 1.2× / 硬切为主且叠化 ≤ 6 帧 / 亮蓝 `#1FCEDD` 字幕 / 无词 duck 音乐开头留 1–2s 现场声 / 不类似画面（感知哈希去重）。
+
 ## 账号边界
 
 - 世斐的叙事主体是人物、地点、事件、连接与真实现场：外部世界。
